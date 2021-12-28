@@ -1,35 +1,133 @@
-*{
+:root {
+    --c1: #03b51b;
+}
+
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
+    position: relative;
 }
-body{
+
+body {
+    position: relative;
     background-color: #222;
+    min-height: 1000px;
+    overflow: auto;
 }
-#cvContainer{
-    margin: 50px;
-    padding: 25px;
-    box-shadow: 0 0 10px 0 #0004;
-    //border-radius: 70px;
+
+#cvContainer {
+    box-shadow: 0 1px 10px 0 #0004;
     background: #fff;
 }
-#cvTop{
+
+#cvTop {
     padding: 25px;
-    box-shadow: 0 0 10px 0 #0004;
+    box-shadow: 0 1px 10px 0 #0004;
     border-radius: 70px;
     display: flex;
     flex-direction: row;
 }
-#cvTop img{
-    width: 300px;
-    height: 300px;
+
+#a {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     object-position: 100% 0;
     border-radius: 50px;
     border-radius: 100%;
     border: 10px solid #f2f2f2;
-    box-shadow: 0 0 10px 0 #0004;
+    box-shadow: 0 1px 10px 0 #0004;
+    flex-shrink: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    border-radius: 30px;
+    align-items: flex-start;
+}
+
+.container>.padding {
+    padding: 5px 10px;
+}
+
+.container>* {
+    margin: 5px;
+}
+
+.container.column {
+    flex-direction: column;
+}
+
+.container.row {
+    flex-direction: row;
+}
+
+.container.padding {
+    padding: 25px;
+}
+
+.container.margin {
+    margin: 25px;
+}
+
+.container.marginH {
+    margin: 0 25px;
+}
+
+.container.fullW {
+    flex-grow: 1;
+}
+
+.shadow {
+    box-shadow: 0 1px 10px 0 #0004;
+}
+
+.bgWhite {
+    background-color: #fff;
+}
+.bgWhiteTr{
+    background-color: #fffd;
+}
+
+.rounded10 {
+    border-radius: 10px;
+}
+
+.rounded15 {
+    border-radius: 15px;
+}
+
+.rounded20 {
+    border-radius: 20px;
+}
+
+.bgLightGrey {
+    background: #f6f6f6;
+}
+
+svg.bgC1 {
+    fill: var(--c1);
+}
+.txtWhite{
+    color: #fff;
+}
+.underline::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
 }
