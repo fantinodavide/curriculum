@@ -7,7 +7,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+@page { margin: 0cm }
 h1,
 h2,
 h3,
@@ -21,7 +21,10 @@ h6 {
 body {
     position: relative;
     background-color: #222;
-    min-height: 1000px;
+    min-height: 400px;
+    overflow: hidden;
+}
+html{
     overflow: auto;
 }
 
@@ -64,6 +67,10 @@ body {
 .container>* {
     margin: 5px;
 }
+.centerV{
+    display: flex;
+    align-items: center;
+}
 
 .container.column {
     flex-direction: column;
@@ -96,7 +103,8 @@ body {
 .bgWhite {
     background-color: #fff;
 }
-.bgWhiteTr{
+
+.bgWhiteTr {
     background-color: #fffd;
 }
 
@@ -119,10 +127,12 @@ body {
 svg.bgC1 {
     fill: var(--c1);
 }
-.txtWhite{
+
+.txtWhite {
     color: #fff;
 }
-.underline::after{
+
+.underline::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -130,4 +140,5 @@ svg.bgC1 {
     width: 100%;
     height: 2px;
     background: #fff;
+    border-radius: 5px;
 }
