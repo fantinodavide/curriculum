@@ -1,5 +1,7 @@
 :root {
     --c1: #3b4;
+    --c2: #33b888;
+    --c3: #32ba88;
 }
 
 * {
@@ -110,6 +112,10 @@ html {
 .container.fullW {
     flex-grow: 1;
 }
+.container.parInfo{
+    position: relative;
+    right: 0;
+}
 
 .shadow {
     box-shadow: 0 1px 10px 0 #0004;
@@ -136,11 +142,24 @@ html {
 }
 
 .bgLightGrey {
-    background: #f6f6f6;
+    background: #f6f6f6dd;
+    //background: #fffc;
 }
-
+svg{
+    position: relative;
+}
 svg.bgC1 {
     fill: var(--c1);
+}
+svg.bgC2 {
+    fill: var(--c2);
+}
+
+svg.shadow {
+    -webkit-filter: drop-shadow(0 1px 7px #0006);
+    filter: drop-shadow(0 1px 7px #0006);
+    /* Similar syntax to box-shadow */
+    box-shadow: none;
 }
 
 .txtWhite {
