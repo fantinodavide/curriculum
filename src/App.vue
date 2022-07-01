@@ -29,9 +29,10 @@
 				<SectionDesc title="web client-side" desc="HTML, CSS, JavaScript, Vue.JS, Angular.JS, JQuery" array />
 				<SectionDesc title="web server-side" desc="Node.JS, PHP" array />
 				<SectionDesc title="others" desc="C, C#, C++, Python" array />
-				<SectionDesc title="softwares" desc="FileZilla, Fusion 360, IdeaMaker, SuperSlicer, Simplify3D, AutoCAD, PhotoShop, Word, PowerPoint, Excel" array />
+				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
+				<SectionDesc title="softwares" desc="Nginx,FileZilla, Fusion 360, IdeaMaker, SuperSlicer, Simplify3D, AutoCAD, PhotoShop, Word, PowerPoint, Excel" array />
 				<SectionDesc title="Operating Systems" desc="Windows=5,Linux=5,MacOS=2" array range/>
-				<SectionDesc title="personality" desc="Relationing=4,Strategy=5,Communication=3.5,dedication=5" array range/>
+				<SectionDesc title="personality" desc="Relationing=4,Strategy=5,Communication=3.5,dedication=5,design=4" array range/>
 				<SectionDesc title="languages" desc="Italian=5,English=3,French=1" array range/>
 			</Section>
 		</aside>
