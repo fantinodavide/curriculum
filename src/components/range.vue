@@ -3,11 +3,11 @@
 	/* eslint-disable */
 	export default {
 		props: {
-			value: String,
-			skew: {
-				required: false,
-				type: Boolean,
-			},
+			value: Number,
+			title: String,
+			max:{
+				default: 5,
+			}
 		},
 		methods: {
 			isUrl: function (txt: string) {
@@ -23,30 +23,38 @@
 </script>
 
 <template>
-	<span>{{ value }}</span>
+	<span v-if="title!=''">
+		{{ title }}
+		<div></div>
+	</span>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	span {
-		padding: 5px 10px;
-		/* transform: skewX(-20deg); */
-		/* background: var(--dark); */
-		color: #eee;
-		margin-right: 10px;
+		white-space: no-break;
+		flex-grow: 1;
 		margin-bottom: 5px;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		text-transform: capitalize;
 	}
-	span::before {
-		content: "";
-		position:absolute;
-		width: calc(100% - 15px);
-		height: calc(100% - 10px);
-		top: 50%;
-		left: 50%;
-		padding: 5px 10px;
-		transform: translate(-50%,-50%) skewX(-15deg);
+	div {
+		justify-self: flex-end;
+		height: 10px;
+		width: 100px;
+		background: #eee;
+		margin-left: auto;
+	}
+	div::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: v-bind(100/max * value+"%");
 		background: var(--dark);
-		z-index: -1;
 		border-radius: 3px;
 	}
 </style>

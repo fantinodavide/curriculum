@@ -1,6 +1,7 @@
 <script setup lang="ts">
-	import SectionTitle from './components/section-title.vue';
+	import Section from './components/section.vue';
 	import SectionDesc from './components/section-desc.vue';
+	import PageBreak from './components/pagebreak.vue';
 </script>
 <script lang="ts">
 	export default {
@@ -15,19 +16,24 @@
 	</header>
 	<div id="main">
 		<aside>
-			<SectionTitle title="info" />
-			<SectionDesc title="address" desc="Viale Vittorio Veneto 13, 12061 Carr&uacute; (CN), Pedmont, Italy" />
-			<SectionDesc title="phone" desc="+39 3914639240" />
-			<SectionDesc title="email" desc="fantinodavide02@gmail.com" />
-			<SectionDesc title="github" desc="https://github.com/fantinodavide" />
-			<SectionDesc title="linkedin" desc="https://www.linkedin.com/in/fantino-davide" />
-			<SectionDesc title="curriculum vitae" desc="https://cv.fantinodavide.it" />
+			<Section title="info">
+				<SectionDesc title="address" desc="Viale Vittorio Veneto 13, 12061 Carr&uacute; (CN), Pedmont, Italy" />
+				<SectionDesc title="phone" desc="+39 3914639240" />
+				<SectionDesc title="email" desc="fantinodavide02@gmail.com" />
+				<SectionDesc title="github" desc="https://github.com/fantinodavide" />
+				<SectionDesc title="linkedin" desc="https://www.linkedin.com/in/fantino-davide" />
+				<SectionDesc title="curriculum vitae" desc="https://cv.fantinodavide.it" />
+			</Section>
 
-			<SectionTitle title="skills" />
-			<SectionDesc title="web client-side" desc="HTML, CSS, JavaScript, Vue.JS, Angular.JS, JQuery" array="true" />
-			<SectionDesc title="web server-side" desc="Node.JS, PHP" array="true" />
-			<SectionDesc title="others" desc="C, C#, C++, Python" array="true" />
-			<SectionDesc title="softwares" desc="Fusion 360, AutoCAD, PhotoShop, Word, PowerPoint, Excel" array="true" />
+			<Section title="skills">
+				<SectionDesc title="web client-side" desc="HTML, CSS, JavaScript, Vue.JS, Angular.JS, JQuery" array />
+				<SectionDesc title="web server-side" desc="Node.JS, PHP" array />
+				<SectionDesc title="others" desc="C, C#, C++, Python" array />
+				<SectionDesc title="softwares" desc="FileZilla, Fusion 360, IdeaMaker, SuperSlicer, Simplify3D, AutoCAD, PhotoShop, Word, PowerPoint, Excel" array />
+				<SectionDesc title="Operating Systems" desc="Windows=5,Linux=5,MacOS=2" array range/>
+				<SectionDesc title="personality" desc="Relationing=4,Strategy=5,Communication=3.5,dedication=5" array range/>
+				<SectionDesc title="languages" desc="Italian=5,English=3,French=1" array range/>
+			</Section>
 		</aside>
 	</div>
 </template>
@@ -91,6 +97,7 @@
 		text-transform: uppercase;
 		font-weight: 500;
 		letter-spacing: 3px;
+		font-size: 40px;
 	}
 
 	aside {
@@ -133,6 +140,15 @@
 	@media print {
 		body {
 			zoom: 80%;
+			margin: 10px;
 		}
+		h2 {
+			break-before: all;
+			page-break-before: all;
+			-webkit-column-break-before: all;
+		}
+	}
+	@page {
+		margin: 75px;
 	}
 </style>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	import tag from './tag.vue';
-	
+	import rangeElm from './range.vue';
 </script>
 <script lang="ts">
 	/* eslint-disable */
@@ -11,10 +11,21 @@
 				required: true,
 				type: String,
 			},
-			array:{
+			array: {
+				default: false,
 				required: false,
-				type: Boolean
-			}
+				type: Boolean,
+			},
+			range: {
+				default: false,
+				required: false,
+				type: Boolean,
+			},
+			skiptitle: {
+				default: false,
+				required: false,
+				type: Boolean,
+			},
 		},
 		methods: {
 			isUrl: function (txt: string) {
@@ -26,31 +37,38 @@
 				return txt.match(r);
 			},
 		},
+		created() {
+			console.log(JSON.parse(JSON.stringify(this.$props)));
+		},
 	};
 </script>
 
 <template>
-	<h4>{{ title }}</h4>
+	<h4 v-if="!skiptitle">{{ title }}</h4>
 	<p v-if="!array && !isUrl(desc)">{{ desc }}</p>
-	<a v-else-if="!array" :href='isEmail(desc)?"mailto:":""+desc' target="__blank">{{ desc.replace("https://","").replace("www.","") }}</a>
+	<a v-else-if="!array && isUrl(desc)" :href="isEmail(desc) ? 'mailto:' : '' + desc" target="__blank">{{ desc.replace('https://', '').replace('www.', '') }}</a>
+	<div v-else-if="range">
+		<rangeElm v-for="t of desc.split(',')" :title="t.trim().split('=')[0]" :value="t.trim().split('=')[1]" />
+	</div>
 	<div v-else>
-		<tag skew v-for="t of desc.split(',')" :value="t.trim()"/>
-	</div>	
+		<tag skew v-for="t of desc.split(',')" :value="t.trim()" />
+	</div>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	h4 {
-		letter-spacing: 3px;
+		letter-spacing: 2px;
 		text-transform: uppercase;
 		font-weight: 600;
 		margin-top: 35px;
 		margin-bottom: 7px;
 	}
-	p,a {
+	p,
+	a {
 		letter-spacing: 0.5px;
 		word-spacing: 0px;
-		word-break: keep-all ;
-		margin-left: 5px
+		word-break: keep-all;
+		margin-left: 5px;
 	}
 </style>

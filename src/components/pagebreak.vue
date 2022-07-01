@@ -23,30 +23,12 @@
 </script>
 
 <template>
-	<span>{{ value }}</span>
+	<div class="pgBreak"></div>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-	span {
-		padding: 5px 10px;
-		/* transform: skewX(-20deg); */
-		/* background: var(--dark); */
-		color: #eee;
-		margin-right: 10px;
-		margin-bottom: 5px;
-	}
-	span::before {
-		content: "";
-		position:absolute;
-		width: calc(100% - 15px);
-		height: calc(100% - 10px);
-		top: 50%;
-		left: 50%;
-		padding: 5px 10px;
-		transform: translate(-50%,-50%) skewX(-15deg);
-		background: var(--dark);
-		z-index: -1;
-		border-radius: 3px;
+	.pgBreak{
+		page-break-after: always;
 	}
 </style>

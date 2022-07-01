@@ -8,7 +8,10 @@
 </script>
 
 <template>
-	<h2>{{ title }}</h2>
+	<div>
+		<h2>{{ title }}</h2>
+		<slot />
+	</div>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -19,7 +22,7 @@
 		text-transform: uppercase;
 		font-weight: 500;
 		/* margin-bottom: 0px; */
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 	h2::after,
 	h3::after {
@@ -30,5 +33,9 @@
 		height: 3px;
 		width: 50px;
 		background: var(--dark);
+	}
+	div{
+		display: flex;
+		flex-direction: column;
 	}
 </style>
