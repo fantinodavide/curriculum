@@ -8,7 +8,7 @@
 </script>
 
 <template>
-	<div>
+	<div :id="title.replace(/\s/g,'')">
 		<h2>{{ title }}</h2>
 		<slot />
 	</div>

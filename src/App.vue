@@ -20,7 +20,7 @@
 
 <template>
 	<header>
-		<h1 style="margin-top: 0">Fantino Davide</h1>
+		<h1 style="margin-top: 0">Fantino<br/>Davide</h1>
 		<h2>Full Stack Developer</h2>
 	</header>
 	<div id="main">
@@ -81,7 +81,7 @@
 						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" skew />
 					</p>
 					<p>
-						<tag v-for="c of ['PHP','Bash']" :value="c" skew />
+						<tag v-for="c of ['PHP', 'Bash']" :value="c" skew />
 					</p>
 				</SectionDesc>
 				<SectionDesc title="Calzolaio Maurizio Calignano" subt="Frontend Developer" desc="https://www.calzolaiomaurizio.it" footer="June 2016 - October 2017">
@@ -103,8 +103,14 @@
 
 			<Section title="projects">
 				<SectionDesc title="Cambridge English Level 1 Certificate in ESOL International" desc="Cambridge University Press & Assessment" footer="April 2021" />
-				<SectionDesc title="Whitelister" desc="https://sqwl.fantinodavide.it" footer="April 2022">
-					<span>I started this project because of the constantly increasing demand of Vue.JS developers so that I could study it in its deepest aspects.<br><br>The birth of this project has sparked the interest in the communities of the games Squad, Post Scriptum and Beyond the Wire. It solves one of the most demanding problems of these games, the permission management of every user of the game servers.<br><br>With this tool the server admins can have more control while giving community leaders more freedom.<br><br>Server admins can invite the leaders of the partner communities to register to this tool and (if needed) set them as "managers" on the tool website. A community leader with "manager" access can manage its community members making them part of groups (of permissions). Permission groups are created and given to the communities by server admins that can choose to require an approval when a community member is added to a group.<span class="white-space-pre"> </span><br>Every community member can register to the website through a code that links the account to a community but unless other roles are given they will only have read-only access limited to their community area.<br><br>A demonstrative website is available at: https://sqwl.fantinodavide.it/ with the following admin credentials:<br>Username: demoadmin<br>Password: demo<br><br>To let people easily get in touch with me, to receive support or to follow the project development I have created the following Discord server: <a href="https://discord.com/invite/5hfcjNYdCP">discord.com/invite/5hfcjNYdCP</a></span>
+				<SectionDesc title="Whitelister" desc="https://github.com/fantinodavide/Squad_Whitelister" footer="April 2022">
+					<span>I started this project because of the constantly increasing demand of Vue.JS developers so that I could study it in its deepest aspects.<br /><br />The birth of this project has sparked the interest in the communities of the games Squad, Post Scriptum and Beyond the Wire. It solves one of the most demanding problems of these games, the permission management of every user of the game servers.<br /><br />With this tool the server admins can have more control while giving community leaders more freedom.<br /><br />Server admins can invite the leaders of the partner communities to register to this tool and (if needed) set them as "managers" on the tool website. A community leader with "manager" access can manage its community members making them part of groups (of permissions). Permission groups are created and given to the communities by server admins that can choose to require an approval when a community member is added to a group.<span class="white-space-pre"> </span><br />Every community member can register to the website through a code that links the account to a community but unless other roles are given they will only have read-only access limited to their community area.<br /><br />A demonstrative website is available at: https://sqwl.fantinodavide.it/ with the following admin credentials:<br />Username: demoadmin<br />Password: demo<br /><br />To let people easily get in touch with me, to receive support or to follow the project development I have created the following Discord server: <a href="https://discord.com/invite/5hfcjNYdCP">discord.com/invite/5hfcjNYdCP</a></span>
+				</SectionDesc>
+				<SectionDesc title="DCS Mission Booking" desc="https://github.com/fantinodavide/DCS_MissionBooking" footer="February 2022">
+					<span aria-hidden="true">The project is born after the necessity of a better and quicker management of the people who intend to take part in a virtual mission through the flight simulator Digital Combat Simulator.<br /><br />This tool reads the missions in the game server folder and lets server admins publish a booking table generated after the available aircraft of the mission.<br /><br />User authentication and management is based on a database of the forum in which all the members of a community are registered so that only a single account is required to access all the main services given by the community.<br />While the users side is managed by the forum, every other aspect such as generating the booking tables and their settings (ex. date and time, restrictions) is managed and stored by the tool through MongoDB.<br /><br />The security side of this project has been widely studied, especially at the time of password encryption and validation for which I chose to use Argon2.<br /><br />The aim was to reduce the amount of work that the community leader should have done and that's why OTA updates have been one of the most important features. After a release is published on the GitHub repository page the tool automatically downloads and installs it.</span>
+				</SectionDesc>
+				<SectionDesc title="DogTracker" desc="https://github.com/fantinodavide/DogTracker" footer="August 2020 - Genuary 2021">
+					<span aria-hidden="true">Hardware choice.<br />Designing and 3D printing of the outer plastic shell.<br />Firmware development for two micro-controllers.<br />Android app development and publishment through the Play Store.<br /><br />The project was born to help locate a free blind dog in a wide-open area. Particular attention has been given to the minimization of radio transmissions not to disorienting the dog that already has limited orientation ability.<br /><br />The system is based on two ESP32 TTGO LoraWAN 868Mhz devices with custom-developed firmware.<br />The "Base" device is responsible of interfacting through the android application and of communicating with the "Collar" device. It sends the virtual fence coordinates and stores the location of the "Collar".<br />The "Collar" device has a lighter firmware that gather the GPS position, which is sent to the "Base" device, an alarm is triggered if the position is outside of the virtual fence.<br /><br />Radio transmissions are based on a custom protocol that offers error detection and message acknowledgment.<br />The plastic waterproof enclosure has been 3D printed and specially designed to fit and protect every component inside.</span>
 				</SectionDesc>
 			</Section>
 
@@ -238,6 +244,20 @@
 		}
 		#print {
 			display: none;
+		}
+
+		#skills {
+			margin-top: 385px;
+
+		}
+		#experience {
+			margin-top: 405px;
+		}
+		#certifications {
+			margin-top: 230px;
+		}
+		#projects {
+			margin-top: 380px;
 		}
 	}
 	@page {
