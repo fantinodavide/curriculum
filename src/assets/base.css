@@ -1,0 +1,317 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+	--accent-color: #fff;
+
+	--vt-c-white: #ffffff;
+	--vt-c-white-soft: #f8f8f8;
+	--vt-c-white-mute: #f2f2f2;
+
+	--vt-c-black: #181818;
+	--vt-c-black-soft: #222222;
+	--vt-c-black-mute: #282828;
+
+	--vt-c-indigo: #2c3e50;
+
+	--vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+	--vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+	--vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+	--vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+	--vt-c-text-light-1: var(--vt-c-indigo);
+	--vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+	--vt-c-text-dark-1: var(--vt-c-white);
+	--vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+
+:root {
+	--color-background: var(--vt-c-black);
+	--color-background-soft: var(--vt-c-black-soft);
+	--color-background-mute: var(--vt-c-black-mute);
+
+	--color-border: var(--vt-c-divider-dark-2);
+	--color-border-hover: var(--vt-c-divider-dark-1);
+
+	--color-heading: var(--vt-c-text-dark-1);
+	--color-text: var(--vt-c-text-dark-1);
+
+	--section-gap: 160px;
+}
+
+/*@media (prefers-color-scheme: dark) {
+  :root {
+	--color-background: var(--vt-c-white);
+	--color-background-soft: var(--vt-c-white-soft);
+	--color-background-mute: var(--vt-c-white-mute);
+  
+	--color-border: var(--vt-c-divider-light-2);
+	--color-border-hover: var(--vt-c-divider-light-1);
+  
+	--color-heading: var(--vt-c-text-light-1);
+	--color-text: var(--vt-c-text-light-1);
+  
+  }
+}*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	position: relative;
+	font-weight: normal;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* *:focus {
+	outline: none;
+} */
+
+::-webkit-scrollbar {
+	height: 5px;
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #333;
+	border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #555;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #666;
+}
+
+body {
+	min-height: 100vh;
+	color: var(--color-text);
+	background: var(--color-background);
+	transition: color 0.5s, background-color 0.5s;
+	line-height: 1.6;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-size: 15px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img {
+	position: relative;
+	max-height: 100%;
+}
+
+button {
+	background: var(--accent-color);
+	border: none;
+	margin: 5px;
+	padding: 5px 10px;
+	border-radius: 300px;
+	color: #2a2a2a;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+input,
+select,
+textarea {
+	background: #333;
+	border-radius: 15px;
+	margin: 5px;
+	border: none;
+	padding: 5px;
+	font-size: 15px;
+	color: #fff;
+	padding: 5px 10px;
+	transition: all 100ms ease-in-out;
+	width: 100%;
+}
+
+select[multiple] {
+	height: 100px;
+	/* border-radius: 10px; */
+	/* margin: 0; */
+}
+
+select:disabled {
+	opacity: 1;
+	appearance: none;
+}
+
+.tab select, .tab input {
+	height: 40px;
+	border-radius: 10px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+header {
+	padding: 20px;
+	z-index: 10000;
+	display: flex;
+	flex-direction: row;
+	min-height: 80px;
+	background: #ffffff09;
+	flex-wrap: wrap;
+	padding-bottom: 0px;
+}
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	background: #ffffff09;
+	padding: 10px;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer img {
+	width: 65px;
+	height: 65px;
+	object-fit: contain;
+	margin-right: 10px;
+}
+
+footer .copyright{
+	color: #aaa;
+	margin: 10px;
+}
+
+a:link {
+	color: #aaa;
+}
+
+a:visited {
+	color: #aaa;
+}
+
+a:hover {
+	color: #ccc;
+}
+
+a:active {
+	color: #aaa;
+}
+
+#app {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.shadow {
+	box-shadow: 0 0 10px 0 #0004;
+}
+
+.marquee-text-text {
+	padding-right: 30px;
+}
+
+input[type="checkbox"] {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: 3px solid #444;
+	background: #777;
+}
+
+input[type="checkbox"]::before {
+	content: "";
+	position: absolute;
+	width: 110%;
+	height: 110%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* border: 3px solid #444; */
+	border: none;
+	background: #444;
+	border-radius: 4px;
+}
+
+input[type="checkbox"]:checked::after {
+	content: "";
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #aaa;
+	border-radius: 2px;
+}
+
+label {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.tag {
+	background: #555;
+	color: #ddd;
+	border-radius: 10px;
+	padding: 1px 5px;
+	margin-right: 5px;
+	line-height: 28px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.tag.noBg {
+	background: #0000;
+}
+
+.tag.redTrans {
+	opacity: 0.6;
+}
+.tag img{
+    height: 20px;
+    margin-right: 5px;
+}
+
+.overflow {
+	overflow: auto;
+}
+.overflow.y {
+	overflow: hidden;
+	overflow-y: auto;
+}
+.overflow.x {
+	overflow: hidden;
+	overflow-x: auto;
+}
+
+.hoverMenu {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	transition: all 150ms ease-in-out, left 0ms linear;
+	background: #222;
+	overflow: auto;
+}
+
+button.redBG{
+	background: #c33;
+	color: #eee;
+}
+button.round{
+	height: 35px;
+	width: 35px;
+	padding: 5px;
+	flex-shrink: 0;
+}
