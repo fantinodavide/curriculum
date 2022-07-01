@@ -1,20 +1,13 @@
-<script setup lang="ts">
-	import tag from './tag.vue';
-	
-</script>
+<script setup lang="ts"></script>
 <script lang="ts">
 	/* eslint-disable */
 	export default {
 		props: {
-			title: String,
-			desc: {
-				required: true,
-				type: String,
-			},
-			array:{
+			value: String,
+			skew: {
 				required: false,
-				type: Boolean
-			}
+				type: Boolean,
+			},
 		},
 		methods: {
 			isUrl: function (txt: string) {
@@ -30,27 +23,29 @@
 </script>
 
 <template>
-	<h4>{{ title }}</h4>
-	<p v-if="!array && !isUrl(desc)">{{ desc }}</p>
-	<a v-else-if="!array" :href='isEmail(desc)?"mailto:":""+desc' target="__blank">{{ desc.replace("https://","").replace("www.","") }}</a>
-	<div v-else>
-		<tag skew v-for="t of desc.split(',')" :value="t.trim()"/>
-	</div>	
+	<span>{{ value }}</span>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-	h4 {
-		letter-spacing: 3px;
-		text-transform: uppercase;
-		font-weight: 600;
-		margin-top: 35px;
-		margin-bottom: 7px;
+	span {
+		padding: 5px 10px;
+		/* transform: skewX(-20deg); */
+		/* background: var(--dark); */
+		color: #eee;
+		margin-right: 10px;
+		margin-bottom: 5px;
 	}
-	p,a {
-		letter-spacing: 0.5px;
-		word-spacing: 0px;
-		word-break: keep-all ;
-		margin-left: 5px
+	span::before {
+		content: "";
+		position:absolute;
+		width: calc(100% - 15px);
+		height: calc(100% - 10px);
+		top: 50%;
+		left: 50%;
+		padding: 5px 10px;
+		transform: translate(-50%,-50%) skewX(-15deg);
+		background: var(--dark);
+		z-index: -1;
 	}
 </style>

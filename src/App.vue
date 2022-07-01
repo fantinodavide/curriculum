@@ -23,9 +23,10 @@
 			<SectionDesc title="linkedin" desc="https://www.linkedin.com/in/fantino-davide/" />
 
 			<SectionTitle title="skills" />
-			<SectionDesc title="web client-side" desc="HTML, CSS, JavaScript, Vue.JS, Angular.JS" />
-			<SectionDesc title="web server-side" desc="Node.JS, PHP" />
-			<SectionDesc title="others" desc="C, C#, C++, Python" />
+			<SectionDesc title="web client-side" desc="HTML, CSS, JavaScript, Vue.JS, Angular.JS, JQuery" array="true" />
+			<SectionDesc title="web server-side" desc="Node.JS, PHP" array="true" />
+			<SectionDesc title="others" desc="C, C#, C++, Python" array="true" />
+			<SectionDesc title="softwares" desc="Fusion 360, AutoCAD, PhotoShop, Word, PowerPoint, Excel" array="true" />
 		</aside>
 	</div>
 </template>
@@ -51,7 +52,7 @@
 	}
 	#main {
 		min-height: 100%;
-		flex-grow:1;
+		flex-grow: 1;
 		display: flex;
 		flex-direction: column;
 		min-height: 100%;
@@ -93,7 +94,7 @@
 		/* width: 200px; */
 		width: min-content;
 		min-height: 100%;
-		flex-grow:1;
+		flex-grow: 1;
 		border-right: 2px solid var(--lighter);
 		display: flex;
 		flex-direction: column;
@@ -120,6 +121,10 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
+	}
+	div {
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	@media print {
