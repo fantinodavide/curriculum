@@ -34,7 +34,7 @@
 <style>
 	:root {
 		--dark: #2c3e50;
-		--lighter: #2c3e5040;
+		--lighter: #00000025;
 	}
 	* {
 		position: relative;
