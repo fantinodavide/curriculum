@@ -23,7 +23,7 @@
 </script>
 
 <template>
-	<span>{{ value }}</span>
+	<span :class="{skew: skew}">{{ value }}</span>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -33,10 +33,12 @@
 		/* transform: skewX(-20deg); */
 		/* background: var(--dark); */
 		color: #eee;
-		margin-right: 10px;
+		margin-right: 3px;
 		margin-bottom: 5px;
+		margin-left: 7px;
+		display: inline-block;
 	}
-	span::before {
+	span.skew::before {
 		content: "";
 		position:absolute;
 		width: calc(100% - 15px);

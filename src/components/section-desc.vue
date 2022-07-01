@@ -8,7 +8,15 @@
 		props: {
 			title: String,
 			desc: {
-				required: true,
+				required: false,
+				type: String,
+			},
+			subt: {
+				required: false,
+				type: String,
+			},
+			footer: {
+				required: false,
 				type: String,
 			},
 			array: {
@@ -38,37 +46,61 @@
 			},
 		},
 		created() {
-			console.log(JSON.parse(JSON.stringify(this.$props)));
+			// console.log(JSON.parse(JSON.stringify(this.$props)));
+			console.log(this.$slots._);
 		},
 	};
 </script>
 
 <template>
-	<h4 v-if="!skiptitle">{{ title }}</h4>
-	<p v-if="!array && !isUrl(desc)">{{ desc }}</p>
-	<a v-else-if="!array && isUrl(desc)" :href="isEmail(desc) ? 'mailto:' : '' + desc" target="__blank">{{ desc.replace('https://', '').replace('www.', '') }}</a>
-	<div v-else-if="range">
-		<rangeElm v-for="t of desc.split(',')" :title="t.trim().split('=')[0]" :value="t.trim().split('=')[1]" />
-	</div>
-	<div v-else>
-		<tag skew v-for="t of desc.split(',')" :value="t.trim()" />
+	<div>
+		<h4 v-if="!skiptitle">{{ title }}</h4>
+		<h5 v-show="subt">{{ subt }}</h5>
+
+		<div class="desc" v-if="desc" :class="{ array: array }">
+			<p v-if="!array && !isUrl(desc)">{{ desc.replace("\\n","<br />") }}</p>
+			<a v-else-if="!array && isUrl(desc)" :href="isEmail(desc) ? 'mailto:' : '' + desc" target="__blank">{{ desc.replace('https://', '').replace('www.', '') }}</a>
+			<div v-else-if="range">
+				<rangeElm v-for="t of desc.split(',')" :title="t.trim().split('=')[0]" :value="parseFloat(t.trim().split('=')[1])" />
+			</div>
+			<div v-else>
+				<tag skew v-for="t of desc.split(',')" :value="t.trim()" />
+			</div>
+		</div>
+		<div v-if="$slots._" class="desc">
+			<slot></slot>
+		</div>
+
+		<h5 v-if="footer">{{ footer }}</h5>
 	</div>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	h4 {
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		text-transform: uppercase;
 		font-weight: 600;
 		margin-top: 35px;
 		margin-bottom: 7px;
+		width: 100%;
 	}
 	p,
 	a {
 		letter-spacing: 0.5px;
 		word-spacing: 0px;
 		word-break: keep-all;
+	}
+	.desc {
 		margin-left: 5px;
+	}
+	h5:first-of-type {
+		margin-top: 0;
+	}
+	h5 {
+		margin-left: 5px !important;
+		font-style: italic;
+		/* font-weight: 600; */
+		color: #888;
 	}
 </style>

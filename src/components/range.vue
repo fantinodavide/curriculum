@@ -46,6 +46,7 @@
 		width: 100px;
 		background: #eee;
 		margin-left: auto;
+		border-radius: 3px;
 	}
 	div::after {
 		content: '';

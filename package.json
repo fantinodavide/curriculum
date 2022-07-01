@@ -8,9 +8,13 @@
     "upsite": "npm run build && git add . && git commit -m 'update' && git push"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
     "core-js": "^3.8.3",
     "express": "^4.18.1",
-    "puppeteer": "^15.2.0",
+    "http": "^0.0.1-security",
+    "jquery": "^3.6.0",
+    "puppeteer": "^15.3.0",
     "vue": "^3.2.13",
     "vuex": "^4.0.0"
   },
