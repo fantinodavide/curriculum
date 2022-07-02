@@ -22,7 +22,7 @@
 		text-transform: uppercase;
 		font-weight: 500;
 		/* margin-bottom: 0px; */
-		margin-top: 50px;
+		margin-top: 40px;
 	}
 	h2::after,
 	h3::after {
@@ -37,6 +37,6 @@
 	div{
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 30px;
+		margin-bottom: 25px;
 	}
 </style>

@@ -34,6 +34,10 @@
 				required: false,
 				type: Boolean,
 			},
+			date: {
+				required: false,
+				type: String,
+			},
 		},
 		methods: {
 			isUrl: function (txt: string) {
@@ -54,7 +58,10 @@
 
 <template>
 	<div>
-		<h4 v-if="!skiptitle">{{ title }}</h4>
+		<h4 v-if="!skiptitle">
+			<span class="date" v-if="date">{{ date }}</span
+			>{{ title }}
+		</h4>
 		<h5 v-show="subt">{{ subt }}</h5>
 
 		<div class="desc" v-if="desc" :class="{ array: array }">
@@ -81,9 +88,10 @@
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		font-weight: 600;
-		margin-top: 35px;
+		margin-top: 30px;
 		margin-bottom: 7px;
 		width: 100%;
+		line-height: 25px;
 	}
 	p,
 	a {
@@ -93,6 +101,7 @@
 	}
 	.desc {
 		margin-left: 5px;
+		text-align: justify;
 	}
 	h5:first-of-type {
 		margin-top: 0;
@@ -101,6 +110,28 @@
 		margin-left: 5px !important;
 		font-style: italic;
 		/* font-weight: 600; */
-		color: #888;
+		color: #787878;
+	}
+
+	.date {
+		background: var(--dark);
+		color: #ddd;
+		padding: 2px 5px;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		overflow: hidden;
+		margin-right: 15px;
+	}
+	.date::after {
+		content: "";
+		position: absolute;
+		width: 16.5px;
+		height: 16.5px;
+		transform: rotate(45deg);
+		top: 3.3px;
+		right: -7px;
+		background: var(--dark);
+		z-index: -1;
+		border-radius: 3px;
 	}
 </style>

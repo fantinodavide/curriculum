@@ -20,7 +20,7 @@
 
 <template>
 	<header>
-		<h1 style="margin-top: 0">Fantino<br/>Davide</h1>
+		<h1 style="margin-top: 0">Fantino Davide</h1>
 		<h2>Full Stack Developer</h2>
 	</header>
 	<div id="main">
@@ -34,6 +34,10 @@
 				<SectionDesc title="curriculum vitae" desc="https://cv.fantinodavide.it" />
 			</Section>
 
+			<Section title="education">
+				<SectionDesc title='Higher Education Institute "G. Vallauri" Fossano CN' desc="Informatics and Telecommunications - Specialization: Informatics" footer="2016-2021" />
+			</Section>
+
 			<Section title="skills">
 				<SectionDesc title="web client-side" desc="HTML, CSS, JavaScript, Vue.JS, Angular.JS, JQuery" array />
 				<SectionDesc title="web server-side" desc="Node.JS, PHP" array />
@@ -44,47 +48,42 @@
 				<SectionDesc title="personality" desc="Relationing=4,Strategy=5,Communication=3.5,dedication=5,design=4" array range />
 				<SectionDesc title="languages" desc="English=3.5,Italian=5,French=1" array range />
 			</Section>
+
+			<Section title="patents">
+				<SectionDesc title="Authorization for defibrillation with Automatic External Defibrillator" subt="July 2021" />
+				<SectionDesc title="Driving License" desc="A1,B" array />
+			</Section>
 		</aside>
 		<div id="rightSide">
-			<Section title="introduction">
-				<SectionDesc desc="I'm a 20 years old italian IT specialist and student. I've been working on a variety of projects, which are mainly websites, during my student career. I'm focusing my efforts to bring into my project the most up-to-date features and technologies as long as the higher simplicity. I've been learning and using C, C#, Python, HTML, CSS, JavaScript, PHP, NodeJS for years, followed by a short immersion in Angular.JS and lately I started to deepen and mastering Vue.JS. I am doing and I will do my best to keep offering the higher quality and performance in every aspect of the knowledge I put at your disposal." />
-			</Section>
-
-			<Section title="education">
-				<SectionDesc title='Higher Education Institute "G. Vallauri" Fossano CN' desc="Informatics and Telecommunications - Specialization: Informatics" footer="2016-2021" />
+			<Section title="about myself">
+				<SectionDesc desc="I'm a 20 years old italian IT specialist and student. During my student career I've been working on a variety of projects, which are mainly websites. I'm focusing my efforts to bring into my project the most up-to-date features and technologies as long as the higher simplicity. I've been learning and using C, C#, Python, HTML, CSS, JavaScript, PHP, NodeJS for years, followed by a short immersion in Angular.JS and lately I started to deepen and mastering Vue.JS. I am doing and I will do my best to keep offering the higher quality and performance in every aspect of the knowledge I put at your disposal." />
 			</Section>
 
 			<Section title="experience">
-				<SectionDesc title="Manfrinato Gioielli" subt="Full Stack Web Developer" desc="https://manfrinatogioielli.it" footer="July 2019 - December 2021">
+				<SectionDesc title="Manfrinato Gioielli" subt="Full Stack Web Developer" desc="https://manfrinatogioielli.it" date="Jul 2019 - Dec 2021">
 					<p>Development of management website and public website e-commerce.</p>
 					<p>
 						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" skew />
-					</p>
-					<p>
 						<tag v-for="c of ['PHP', 'SQL']" :value="c" skew />
 					</p>
 				</SectionDesc>
-				<SectionDesc title="Greenspace E-mobility" subt="Full Stack Web Developer" footer="July 2021 - September 2021">
+				<SectionDesc title="Greenspace E-mobility" subt="Full Stack Web Developer" date="Jul 2021 - Sep 2021">
 					<p>Development of the first version and no more active management website and public website.</p>
 					<p>Configuration of a VPS for website hosting and database hosting.</p>
 					<p>
 						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" skew />
-					</p>
-					<p>
 						<tag v-for="c of ['PHP', 'SQL', 'Bash']" :value="c" skew />
 					</p>
 				</SectionDesc>
-				<SectionDesc title="Olos Massaggi e Formazione Ayurvedica" subt="Full Stack Web Developer" desc="https://olostrattamentiolistici.eu" footer="Genuary 2017 - June 2019">
+				<SectionDesc title="Olos Massaggi e Formazione Ayurvedica" subt="Full Stack Web Developer" desc="https://olostrattamentiolistici.eu" date="jan 2017 - Jun 2019">
 					<p>Development of management website and public website.</p>
 					<p>Configuration of a VPS for website hosting</p>
 					<p>
 						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" skew />
-					</p>
-					<p>
 						<tag v-for="c of ['PHP', 'Bash']" :value="c" skew />
 					</p>
 				</SectionDesc>
-				<SectionDesc title="Calzolaio Maurizio Calignano" subt="Frontend Developer" desc="https://www.calzolaiomaurizio.it" footer="June 2016 - October 2017">
+				<SectionDesc title="Calzolaio Maurizio Calignano" subt="Frontend Developer" desc="https://www.calzolaiomaurizio.it" date="Jun 2016 - Oct 2017">
 					<p>Development of the public website.</p>
 					<p>
 						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" skew />
@@ -92,31 +91,25 @@
 				</SectionDesc>
 			</Section>
 
-			<Section title="certifications">
-				<SectionDesc title="Cambridge English Level 1 Certificate in ESOL International" desc="Cambridge University Press & Assessment" footer="February 2021" />
-				<SectionDesc title="CCNA: Routing and Switching: Introduction to Networks" desc="Cisco Networking Academy" footer="May 2020" />
-				<SectionDesc title="CCNAv7: Switching, Routing, and Wireless Essentials" desc="Cisco Networking Academy" footer="June 2021" />
-				<SectionDesc title="CCNAv7: Enterprise Networking, Security, and Automation" desc="Cisco Networking Academy" footer="June 2021" />
-				<SectionDesc title="Introduction to Cloud Computing" desc="IBM" footer="December 2021" />
-				<SectionDesc title="Introduction to Web Development with HTML, CSS, JavaScript" desc="IBM" footer="December 2021" />
-			</Section>
-
 			<Section title="projects">
-				<SectionDesc title="Cambridge English Level 1 Certificate in ESOL International" desc="Cambridge University Press & Assessment" footer="April 2021" />
-				<SectionDesc title="Whitelister" desc="https://github.com/fantinodavide/Squad_Whitelister" footer="April 2022">
-					<span>I started this project because of the constantly increasing demand of Vue.JS developers so that I could study it in its deepest aspects.<br /><br />The birth of this project has sparked the interest in the communities of the games Squad, Post Scriptum and Beyond the Wire. It solves one of the most demanding problems of these games, the permission management of every user of the game servers.<br /><br />With this tool the server admins can have more control while giving community leaders more freedom.<br /><br />Server admins can invite the leaders of the partner communities to register to this tool and (if needed) set them as "managers" on the tool website. A community leader with "manager" access can manage its community members making them part of groups (of permissions). Permission groups are created and given to the communities by server admins that can choose to require an approval when a community member is added to a group.<span class="white-space-pre"> </span><br />Every community member can register to the website through a code that links the account to a community but unless other roles are given they will only have read-only access limited to their community area.<br /><br />A demonstrative website is available at: https://sqwl.fantinodavide.it/ with the following admin credentials:<br />Username: demoadmin<br />Password: demo<br /><br />To let people easily get in touch with me, to receive support or to follow the project development I have created the following Discord server: <a href="https://discord.com/invite/5hfcjNYdCP">discord.com/invite/5hfcjNYdCP</a></span>
+				<SectionDesc title="Whitelister" desc="https://github.com/fantinodavide/Squad_Whitelister" date="Apr 2022">
+					<span>I started this project because of the constantly increasing demand of Vue.JS developers so that I could study it in its deepest aspects.<br />The project has sparked the interest in the communities of the games Squad, Post Scriptum and Beyond the Wire. It solves one of the most demanding problems of these games, the permission management of every user of the game servers.<br />With this tool the server admins can have more control while giving community leaders more freedom.<br />Server admins can invite the leaders of the partner communities to register to this tool and (if needed) set them as "managers" on the tool website to give clan permissions to users. Permission groups are created and given to the communities by server admins that can choose to require an approval when a community member is added to a group.<span class="white-space-pre"> </span><br />A demonstrative website is available at: <a href="https://sqwl.fantinodavide.it/">sqwl.fantinodavide.it</a> with the following admin credentials:<br />Username: demoadmin<br />Password: demo<br />To let people easily get in touch with me, to receive support or to follow the project development I have created the following Discord server: <a href="https://discord.com/invite/5hfcjNYdCP">discord.com/invite/5hfcjNYdCP</a></span>
 				</SectionDesc>
-				<SectionDesc title="DCS Mission Booking" desc="https://github.com/fantinodavide/DCS_MissionBooking" footer="February 2022">
-					<span aria-hidden="true">The project is born after the necessity of a better and quicker management of the people who intend to take part in a virtual mission through the flight simulator Digital Combat Simulator.<br /><br />This tool reads the missions in the game server folder and lets server admins publish a booking table generated after the available aircraft of the mission.<br /><br />User authentication and management is based on a database of the forum in which all the members of a community are registered so that only a single account is required to access all the main services given by the community.<br />While the users side is managed by the forum, every other aspect such as generating the booking tables and their settings (ex. date and time, restrictions) is managed and stored by the tool through MongoDB.<br /><br />The security side of this project has been widely studied, especially at the time of password encryption and validation for which I chose to use Argon2.<br /><br />The aim was to reduce the amount of work that the community leader should have done and that's why OTA updates have been one of the most important features. After a release is published on the GitHub repository page the tool automatically downloads and installs it.</span>
+				<SectionDesc title="DCS Mission Booking" desc="https://github.com/fantinodavide/DCS_MissionBooking" date="Feb 2022">
+					<span aria-hidden="true">The project is born after the necessity of a better and quicker management of the people who intend to take part in a virtual mission through the flight simulator Digital Combat Simulator.<br />The tool parses missions files and generates the booking table.<br />User authentication and management is based on a database of the forum in which all the members of a community are registered to reduce users' accounts.<br />Booking tables and their settings (ex. date and time, restrictions) are managed and stored with MongoDB.<br />The security side of this project has been widely studied, especially at the time of password encryption and validation for which I've chosen to use Argon2.<br />The aim was to reduce the amount of work of the community leader. OTA updates have been one of the most important features, after a release is published on the GitHub repository page the tool automatically downloads and installs it.</span>
 				</SectionDesc>
-				<SectionDesc title="DogTracker" desc="https://github.com/fantinodavide/DogTracker" footer="August 2020 - Genuary 2021">
-					<span aria-hidden="true">Hardware choice.<br />Designing and 3D printing of the outer plastic shell.<br />Firmware development for two micro-controllers.<br />Android app development and publishment through the Play Store.<br /><br />The project was born to help locate a free blind dog in a wide-open area. Particular attention has been given to the minimization of radio transmissions not to disorienting the dog that already has limited orientation ability.<br /><br />The system is based on two ESP32 TTGO LoraWAN 868Mhz devices with custom-developed firmware.<br />The "Base" device is responsible of interfacting through the android application and of communicating with the "Collar" device. It sends the virtual fence coordinates and stores the location of the "Collar".<br />The "Collar" device has a lighter firmware that gather the GPS position, which is sent to the "Base" device, an alarm is triggered if the position is outside of the virtual fence.<br /><br />Radio transmissions are based on a custom protocol that offers error detection and message acknowledgment.<br />The plastic waterproof enclosure has been 3D printed and specially designed to fit and protect every component inside.</span>
+				<SectionDesc title="DogTracker" desc="https://github.com/fantinodavide/DogTracker" date="Aug 2020 - jan 2021">
+					<span aria-hidden="true">Hardware choice.<br />Designing and 3D printing of the outer plastic shell.<br />Firmware development for two micro-controllers.<br />Android app development and publishment through the Play Store.<br />The project was born to help locating a blind dog in a wide-open area. Radio transmissions are almost absent not to disorient the dog that already has limited orientation ability.<br />The system is based on two ESP32 868Mhz devices with custom-developed firmware.<br />The "Base" device connects with the android application and communicates with the "Collar" device, it sends the virtual fence coordinates and stores the latest location of the "Collar".<br />The "Collar" device has a lighter firmware that gathers the GPS position, which is sent to the "Base" device, an alarm is triggered if the position is outside of the virtual fence.<br />Radio transmissions are based on a custom protocol that offers error detection and message acknowledgment.</span>
 				</SectionDesc>
 			</Section>
 
-			<Section title="patents">
-				<SectionDesc title="Authorization for defibrillation with Automatic External Defibrillator" footer="July 2021" />
-				<SectionDesc title="Driving License" desc="A1,B" array />
+			<Section title="certifications">
+				<SectionDesc title="Introduction to Web Development with HTML, CSS, JavaScript" desc="IBM" footer="Dec 2021" />
+				<SectionDesc title="Introduction to Cloud Computing" desc="IBM" footer="Dec 2021" />
+				<SectionDesc title="CCNAv7: Enterprise Networking, Security, and Automation" desc="Cisco Networking Academy" footer="Jun 2021" />
+				<SectionDesc title="CCNAv7: Switching, Routing, and Wireless Essentials" desc="Cisco Networking Academy" footer="Jun 2021" />
+				<SectionDesc title="Cambridge English Level 1 Certificate in ESOL International" desc="Cambridge University Press & Assessment" footer="Feb 2021" />
+				<SectionDesc title="CCNA: Routing and Switching: Introduction to Networks" desc="Cisco Networking Academy" footer="May 2020" />
 			</Section>
 		</div>
 	</div>
@@ -126,8 +119,8 @@
 <style>
 	:root {
 		--dark: #2c3e50;
-		--dark: #4a4a4a;
 		--dark: #404650;
+		--dark2: #606878;
 		--lighter: #00000025;
 	}
 	* {
@@ -157,6 +150,7 @@
 		flex-wrap: nowrap;
 		padding: 50px;
 		padding-top: 0;
+		padding-right: 0;
 	}
 	html {
 		min-height: 100vh;
@@ -173,7 +167,7 @@
 	header {
 		display: flex;
 		flex-direction: column;
-		padding-bottom: 40px;
+		padding-bottom: 20px;
 		border-bottom: 2px solid var(--lighter);
 	}
 	h1,
@@ -190,6 +184,7 @@
 		font-weight: 600;
 		letter-spacing: 3px;
 		font-size: 50px;
+		margin-bottom: 0;
 	}
 	header h2,
 	header h3 {
@@ -247,17 +242,23 @@
 		}
 
 		#skills {
-			margin-top: 385px;
+			margin-top: 175px;
+			margin-bottom: 10px;
+		}
 
-		}
 		#experience {
-			margin-top: 405px;
-		}
-		#certifications {
-			margin-top: 230px;
+			margin-top: 0px;
+			margin-bottom: 30px;
 		}
 		#projects {
-			margin-top: 380px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		#certifications {
+			margin-top: 0px;
+		}
+		aside {
+			padding-bottom: 900px;
 		}
 	}
 	@page {

@@ -47,7 +47,7 @@
 		left: 50%;
 		padding: 5px 10px;
 		transform: translate(-50%,-50%) skewX(-15deg);
-		background: var(--dark);
+		background: var(--dark2);
 		z-index: -1;
 		border-radius: 3px;
 	}
