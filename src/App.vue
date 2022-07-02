@@ -34,6 +34,7 @@
 				<SectionDesc title="address" desc="Viale Vittorio Veneto 13, 12061 Carr&uacute; (CN), Piedmont, Italy" />
 				<SectionDesc title="phone" desc="+39 3914639240" />
 				<SectionDesc title="email" desc="fantinodavide02@gmail.com" />
+				<SectionDesc title="pec" desc="fantinodavide@pec.it" />
 				<SectionDesc title="github" desc="https://github.com/fantinodavide" />
 				<SectionDesc title="linkedin" desc="https://www.linkedin.com/in/fantino-davide" />
 				<SectionDesc title="curriculum vitae" desc="https://cv.fantinodavide.it" />
@@ -251,7 +252,7 @@
 		}
 
 		#skills {
-			margin-top: 95px;
+			margin-top: 12px;
 			margin-bottom: 5px;
 		}
 
