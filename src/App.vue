@@ -264,20 +264,29 @@
 			margin-bottom: 30px;
 		}
 		#projects {
-			margin-top: 0px;
+			margin-top: 25px;
 			margin-bottom: 0px;
 		}
 		#projects #homeserver{
-			margin-top: 1px;
+			margin-top: 10px;
+		}
+		#projects #homeserver h4{
+			margin-top: 0px;
 		}
 		#certifications {
 			margin-top: 0px;
+		}
+		#certifications h2{
+			margin-top: 25px;
+		}
+		#certifications h4{
+			margin-top: 30px;
 		}
 		#patents h2{
 			margin-top: 0;
 		}
 		aside {
-			padding-bottom: 945px;
+			padding-bottom: 900px;
 		}
 	}
 	#education * {
