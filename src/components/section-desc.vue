@@ -57,7 +57,7 @@
 </script>
 
 <template>
-	<div>
+	<div :id="title?title.replace(/\s/g,'').toLowerCase():''">
 		<h4 v-if="!skiptitle">
 			<tag v-if="date" :value="date" arrow/>{{ title }}
 		</h4>
