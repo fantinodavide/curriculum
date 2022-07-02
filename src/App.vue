@@ -37,6 +37,7 @@
 				<SectionDesc title="github" desc="https://github.com/fantinodavide" />
 				<SectionDesc title="linkedin" desc="https://www.linkedin.com/in/fantino-davide" />
 				<SectionDesc title="curriculum vitae" desc="https://cv.fantinodavide.it" />
+				<SectionDesc title="birthday" desc="28 Jan 2002" />
 			</Section>
 
 			<Section title="education">
@@ -48,7 +49,7 @@
 				<SectionDesc title="web server-side" desc="Node.JS, PHP" array />
 				<SectionDesc title="other" desc="C, C#, C++, Python" array />
 				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
-				<SectionDesc title="softwares" desc="Docker,Nginx,FileZilla, Fusion 360, IdeaMaker, SuperSlicer, Simplify3D, AutoCAD, PhotoShop, Word, PowerPoint, Excel" array />
+				<SectionDesc title="softwares" desc="Proxmox,Docker,Nginx,TrueNAS,ZFS,RAID,FileZilla, Fusion 360, IdeaMaker, SuperSlicer, Simplify3D, AutoCAD, PhotoShop" array />
 				<SectionDesc title="Operating Systems" desc="Linux=5,Windows=5,MacOS=2" array range />
 				<SectionDesc title="personality" desc="Relationing=4,Strategy=5,Communication=3.5,dedication=5,design=4" array range />
 				<SectionDesc title="languages" desc="English=3.5,Italian=5,French=1" array range />
@@ -105,6 +106,9 @@
 				</SectionDesc>
 				<SectionDesc title="DogTracker" desc="https://github.com/fantinodavide/DogTracker" date="Aug 2020 - jan 2021">
 					<span aria-hidden="true">Hardware choice.<br />Designing and 3D printing of the outer plastic shell.<br />Firmware development for two micro-controllers.<br />Android app development and publishment through the Play Store.<br />The project was born to help locating a blind dog in a wide-open area. Radio transmissions are almost absent not to disorient the dog that already has limited orientation ability.<br />The system is based on two ESP32 868Mhz devices with custom-developed firmware.<br />The "Base" device connects with the android application and communicates with the "Collar" device, it sends the virtual fence coordinates and stores the latest location of the "Collar".<br />The "Collar" device has a lighter firmware that gathers the GPS position, which is sent to the "Base" device, an alarm is triggered if the position is outside of the virtual fence.<br />Radio transmissions are based on a custom protocol that offers error detection and message acknowledgment.</span>
+				</SectionDesc>
+				<SectionDesc title="Home Server" date="Jun 2016 - Oct 2017">
+					<p>Hardware and Software configuration of the enterprise server HP ProLiant DL380 G7.<br />Set up with the hypervisor Proxmox and configured to work as a NAS, Reverse Proxy and Host for many projects.<br />The kerner of the hypervisor has been patched to unlock the IT HBA mode of the hardware RAID controller HP P410i with an unofficial but working tool. With the capability of bypassing the hardware raid I have been able to create a software ZFS RAID trhough the TrueNas OS installed in a virtual machine.</p>
 				</SectionDesc>
 			</Section>
 
@@ -247,8 +251,8 @@
 		}
 
 		#skills {
-			margin-top: 175px;
-			margin-bottom: 10px;
+			margin-top: 95px;
+			margin-bottom: 5px;
 		}
 
 		#experience {
@@ -262,11 +266,14 @@
 		#certifications {
 			margin-top: 0px;
 		}
+		#patents h2{
+			margin-top: 0;
+		}
 		aside {
-			padding-bottom: 900px;
+			padding-bottom: 945px;
 		}
 	}
-	#education *{
+	#education * {
 		text-align: left;
 	}
 	@page {

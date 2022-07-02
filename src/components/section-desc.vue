@@ -59,8 +59,7 @@
 <template>
 	<div>
 		<h4 v-if="!skiptitle">
-			<span class="date" v-if="date">{{ date }}</span
-			>{{ title }}
+			<tag v-if="date" :value="date" arrow/>{{ title }}
 		</h4>
 		<h5 v-show="subt">{{ subt }}</h5>
 
