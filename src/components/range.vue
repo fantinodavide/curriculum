@@ -55,7 +55,7 @@
 		left: 0;
 		height: 100%;
 		width: v-bind(100/max * value+"%");
-		background: var(--dark);
+		background: var(--dark2);
 		border-radius: 3px;
 	}
 </style>

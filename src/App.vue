@@ -7,6 +7,11 @@
 <script lang="ts">
 	export default {
 		name: 'App',
+		data() {
+			return {
+				dark2: '',
+			};
+		},
 		methods: {
 			print: function () {
 				window.print();
@@ -120,7 +125,7 @@
 	:root {
 		--dark: #2c3e50;
 		--dark: #404650;
-		--dark2: #606878;
+		--dark2: #707880;
 		--lighter: #00000025;
 	}
 	* {
@@ -260,6 +265,9 @@
 		aside {
 			padding-bottom: 900px;
 		}
+	}
+	#education *{
+		text-align: left;
 	}
 	@page {
 		margin: 50px;

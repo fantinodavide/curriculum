@@ -32,7 +32,7 @@
 		content: '';
 		height: 3px;
 		width: 50px;
-		background: var(--dark);
+		background: var(--dark2);
 	}
 	div{
 		display: flex;
