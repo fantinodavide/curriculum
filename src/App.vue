@@ -121,6 +121,9 @@
 				<SectionDesc title="Cambridge English Level 1 Certificate in ESOL International" desc="Cambridge University Press & Assessment" footer="Feb 2021" />
 				<SectionDesc title="CCNA: Routing and Switching: Introduction to Networks" desc="Cisco Networking Academy" footer="May 2020" />
 			</Section>
+			<Section title="privacy">
+				<SectionDesc desc="I authorize the processing of my personal data pursuant to Legislative Decree 101/2018 and art. 13 GDPR (EU Regulation 2016/679) for the purposes of personnel research and selection"/>
+			</Section>
 		</div>
 	</div>
 	<button id="print" @click="print">Print</button>
