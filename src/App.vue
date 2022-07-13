@@ -18,7 +18,8 @@
 			},
 		},
 		created() {
-			console.log(this.axios);
+			// console.log(this.axios);
+			
 		},
 	};
 </script>
@@ -63,7 +64,7 @@
 		</aside>
 		<div id="rightSide">
 			<Section title="about myself">
-				<SectionDesc desc="I'm a 20 years old italian IT specialist and student. During my student career I've been working on a variety of projects, which are mainly websites. I'm focusing my efforts to bring into my project the most up-to-date features and technologies as long as the higher simplicity. I've been learning and using C, C#, Python, HTML, CSS, JavaScript, PHP, NodeJS for years, followed by a short immersion in Angular.JS and lately I started to deepen and mastering Vue.JS. I am doing and I will do my best to keep offering the higher quality and performance in every aspect of the knowledge I put at your disposal." />
+				<SectionDesc desc="I am a 20 years old italian IT specialist and student. During my student career I've been working on a variety of projects, which are mainly websites. I'm focusing my efforts to bring into my project the most up-to-date features and technologies as long as the higher simplicity. I've been learning and using C, C#, Python, HTML, CSS, JavaScript, PHP, NodeJS for years, followed by a short immersion in Angular.JS and lately I started to deepen and mastering Vue.JS. I am doing and I will do my best to keep offering the higher quality and performance in every aspect of the knowledge I put at your disposal." />
 			</Section>
 
 			<Section title="experience">
@@ -284,9 +285,19 @@
 		}
 		#patents h2{
 			margin-top: 0;
+			/* margin-bottom: 0; */
+		}
+		#privacy{
+			margin-bottom: 0;
+
 		}
 		aside {
-			padding-bottom: 900px;
+			padding-bottom: 0px;
+			min-height: 0;
+		}
+		.rightSide{
+			padding-bottom: 0px;
+			
 		}
 	}
 	#education * {
