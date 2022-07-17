@@ -1,0 +1,8 @@
+I am a 20-year-old italian IT student. I studied at Higher Education Institute "G. Vallauri" (Fossano, CN) from 2016 to 2021. I am a self-taught student since a year and now I am looking for a job that could take advantage of all my knowledge and experience.
+I know and can code with the most common programming languages, scripting languages and frameworks but since two years I've been deepening Node.js and Vue.js in the last year.
+
+I have experience with enterprise server management and maintenance, I own a HP ProLiant DL380 G7 running Proxmox hypervisor.
+
+Lately, I worked on what I believe could be my "masterpiece", the "Whitelister" project, built  with Node.js and Vue.js to fight the lack of advanced control over players' permissions of three games.
+The repository is public and available at: https://github.com/fantinodavide/Squad_Whitelister
+With this project I got in touch with people from Australia to Russia and from United States to Great Britain, thanks to that I've been lately working on a collaboration with an hosting provider.
