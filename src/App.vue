@@ -49,6 +49,7 @@
 			<Section title="skills">
 				<SectionDesc title="web client-side" desc="HTML, CSS, JavaScript, Vue.JS, Angular.JS, JQuery" array />
 				<SectionDesc title="web server-side" desc="Node.JS, PHP" array />
+				<SectionDesc title="cloud" desc="Amazon Web Services,IBM Cloud" array />
 				<SectionDesc title="other" desc="C, C#, C++, Python" array />
 				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
 				<SectionDesc title="softwares" desc="Proxmox,Docker,Nginx,TrueNAS,ZFS,RAID,FileZilla, Fusion 360, IdeaMaker, SuperSlicer, Simplify3D, AutoCAD, PhotoShop" array />
