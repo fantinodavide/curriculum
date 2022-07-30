@@ -26,7 +26,7 @@
 <template>
 	<header>
 		<h1 style="margin-top: 0">Fantino Davide</h1>
-		<h2>Full Stack Web Developer, AWS Cloud Practitioner student</h2>
+		<h2>Full Stack Software Developer, AWS Cloud Practitioner student</h2>
 	</header>
 	<div id="main">
 		<aside>
