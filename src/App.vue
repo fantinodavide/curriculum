@@ -19,7 +19,6 @@
 		},
 		created() {
 			// console.log(this.axios);
-			
 		},
 	};
 </script>
@@ -27,7 +26,7 @@
 <template>
 	<header>
 		<h1 style="margin-top: 0">Fantino Davide</h1>
-		<h2>Full Stack Developer</h2>
+		<h2>Full Stack Web Developer, AWS Cloud Practitioner student</h2>
 	</header>
 	<div id="main">
 		<aside>
@@ -47,12 +46,11 @@
 			</Section>
 
 			<Section title="skills">
-				<SectionDesc title="web client-side" desc="HTML, CSS, JavaScript, Vue.JS, Angular.JS, JQuery" array />
-				<SectionDesc title="web server-side" desc="Node.JS, PHP" array />
+				<SectionDesc title="web" desc="HTML, CSS, JavaScript, Vue.JS, Angular.JS, JQuery,Node.JS, PHP" array />
 				<SectionDesc title="cloud" desc="Amazon Web Services,IBM Cloud" array />
 				<SectionDesc title="other" desc="C, C#, C++, Python" array />
 				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
-				<SectionDesc title="softwares" desc="Proxmox,Docker,Nginx,TrueNAS,ZFS,RAID,FileZilla, Fusion 360, IdeaMaker, SuperSlicer, Simplify3D, AutoCAD, PhotoShop" array />
+				<SectionDesc title="softwares" desc="Proxmox,Docker,Nginx,TrueNAS,ZFS,RAID,FTP,Fusion 360,PhotoShop" array />
 				<SectionDesc title="Operating Systems" desc="Linux=5,Windows=5,MacOS=2" array range />
 				<SectionDesc title="personality" desc="Relationing=4,Strategy=5,Communication=3.5,dedication=5,design=4" array range />
 				<SectionDesc title="languages" desc="English=3.5,Italian=5,French=1" array range />
@@ -65,7 +63,7 @@
 		</aside>
 		<div id="rightSide">
 			<Section title="about myself">
-				<SectionDesc desc="I am a 20 years old italian IT specialist and student. During my student career I've been working on a variety of projects, which are mainly websites. I'm focusing my efforts to bring into my project the most up-to-date features and technologies as long as the higher simplicity. I've been learning and using C, C#, Python, HTML, CSS, JavaScript, PHP, NodeJS for years, followed by a short immersion in Angular.JS and lately I started to deepen and mastering Vue.JS. I am doing and I will do my best to keep offering the higher quality and performance in every aspect of the knowledge I put at your disposal." />
+				<SectionDesc desc="20 years old italian IT specialist and student. During my student career I've been working on a variety of projects, which are mainly websites. I'm focusing my efforts to bring into my projects the most up-to-date features and technologies as long as the best and simplest user-experience. I've been learning and using a wide variety of programming languages for years and lately I started to deepen and mastering NodeJS and Vue.JS. I am doing and I will do my best to keep offering the highest quality and performance in every aspect of the knowledge I put at your disposal." />
 			</Section>
 
 			<Section title="experience">
@@ -124,7 +122,7 @@
 				<SectionDesc title="CCNA: Routing and Switching: Introduction to Networks" desc="Cisco Networking Academy" footer="May 2020" />
 			</Section>
 			<Section title="privacy">
-				<SectionDesc desc="I authorize the processing of my personal data pursuant to Legislative Decree 101/2018 and art. 13 GDPR (EU Regulation 2016/679) for the purposes of personnel research and selection"/>
+				<SectionDesc desc="I authorize the processing of my personal data pursuant to Legislative Decree 101/2018 and art. 13 GDPR (EU Regulation 2016/679) for the purposes of personnel research and selection" />
 			</Section>
 		</div>
 	</div>
@@ -269,36 +267,34 @@
 			margin-top: 25px;
 			margin-bottom: 0px;
 		}
-		#projects #homeserver{
+		#projects #homeserver {
 			margin-top: 10px;
 		}
-		#projects #homeserver h4{
+		#projects #homeserver h4 {
 			margin-top: 0px;
 		}
 		#certifications {
 			margin-top: 0px;
 		}
-		#certifications h2{
+		#certifications h2 {
 			margin-top: 25px;
 		}
-		#certifications h4{
+		#certifications h4 {
 			margin-top: 30px;
 		}
-		#patents h2{
+		#patents h2 {
 			margin-top: 0;
 			/* margin-bottom: 0; */
 		}
-		#privacy{
+		#privacy {
 			margin-bottom: 0;
-
 		}
 		aside {
 			padding-bottom: 0px;
 			min-height: 0;
 		}
-		.rightSide{
+		.rightSide {
 			padding-bottom: 0px;
-			
 		}
 	}
 	#education * {
