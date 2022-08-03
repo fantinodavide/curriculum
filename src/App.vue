@@ -46,7 +46,7 @@
 			</Section>
 
 			<Section title="skills">
-				<SectionDesc title="programming Languages" desc="HTML, CSS, JavaScript, Vue.js, Angular.js, JQuery,Node.js,Express.js, PHP,C, C#, C++, Python" array />
+				<SectionDesc title="programming Languages" desc="HTML, CSS, JavaScript, Vue.js, Angular, JQuery,Node.js,Express.js, PHP,C, C#, C++, Python" array />
 				<SectionDesc title="cloud" desc="Amazon Web Services,IBM Cloud" array />
 				<!-- <SectionDesc title="other" desc="C, C#, C++, Python" array /> -->
 				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
