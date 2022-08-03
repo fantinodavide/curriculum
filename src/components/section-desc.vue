@@ -34,6 +34,11 @@
 				required: false,
 				type: Boolean,
 			},
+			showValue: {
+				default: false,
+				required: false,
+				type: Boolean,
+			},
 			date: {
 				required: false,
 				type: String,
@@ -58,16 +63,16 @@
 
 <template>
 	<div :id="title?title.replace(/\s/g,'').toLowerCase():''">
-		<h4 v-if="title">
+		<h4 v-if="title || title==''">
 			<tag v-if="date" :value="date" arrow/>{{ title }}
 		</h4>
-		<h5 v-show="subt">{{ subt }}</h5>
+		<h5 v-show="subt || subt==''">{{ subt }}</h5>
 
 		<div class="desc" v-if="desc" :class="{ array: array }">
 			<p v-if="!array && !isUrl(desc)">{{ desc.replace("\\n","<br />") }}</p>
 			<a v-else-if="!array && isUrl(desc)" :href="isEmail(desc) ? 'mailto:' : '' + desc" target="__blank">{{ desc.replace('https://', '').replace('www.', '') }}</a>
 			<div v-else-if="range">
-				<rangeElm v-for="t of desc.split(',')" :title="t.trim().split('=')[0]" :value="parseFloat(t.trim().split('=')[1])" />
+				<rangeElm v-for="t of desc.split(',')" :title="t.trim().split('=')[0]" :value="parseFloat(t.trim().split('=')[1])" :showValue="showValue"/>
 			</div>
 			<div v-else>
 				<tag skew v-for="t of desc.split(',')" :value="t.trim()" />

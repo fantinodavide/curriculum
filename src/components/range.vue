@@ -5,9 +5,13 @@
 		props: {
 			value: Number,
 			title: String,
-			max:{
+			showValue: {
+				type: Boolean,
+				default: false,
+			},
+			max: {
 				default: 5,
-			}
+			},
 		},
 		methods: {
 			isUrl: function (txt: string) {
@@ -23,9 +27,11 @@
 </script>
 
 <template>
-	<span v-if="title!=''">
+	<span v-if="title != ''">
 		{{ title }}
-		<div></div>
+		<div>
+			<span class="value" v-if="showValue">{{ value }}</span>
+		</div>
 	</span>
 </template>
 
@@ -41,6 +47,7 @@
 		text-transform: capitalize;
 	}
 	div {
+		position: relative;
 		justify-self: flex-end;
 		height: 10px;
 		width: 100px;
@@ -54,8 +61,27 @@
 		top: 0;
 		left: 0;
 		height: 100%;
-		width: v-bind(100/max * value+"%");
+		width: v-bind(100 / max * value + '%');
 		background: var(--dark2);
 		border-radius: 3px;
+	}
+	div span.value {
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		top: 50%;
+		left: v-bind(100 / max * value + '%');
+		height: 20px;
+		width: 20px;
+		background: var(--dark2);
+		transform: translate(-50%,-50%);
+		font-size: 14px;
+		color: #eee;
+		z-index: 2;
+		border-radius: 10px;
+		/* box-shadow: 0 0 4px 0 #0004; */
 	}
 </style>

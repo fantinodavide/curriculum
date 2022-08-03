@@ -46,14 +46,18 @@
 			</Section>
 
 			<Section title="skills">
-				<SectionDesc title="web" desc="HTML, CSS, JavaScript, Vue.JS, Angular.JS, JQuery,Node.JS, PHP" array />
+				<SectionDesc title="programming Languages" desc="HTML, CSS, JavaScript, Vue.js, Angular.js, JQuery,Node.js,Express.js, PHP,C, C#, C++, Python" array />
 				<SectionDesc title="cloud" desc="Amazon Web Services,IBM Cloud" array />
-				<SectionDesc title="other" desc="C, C#, C++, Python" array />
+				<!-- <SectionDesc title="other" desc="C, C#, C++, Python" array /> -->
 				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
 				<SectionDesc title="softwares" desc="Proxmox,Docker,Nginx,TrueNAS,ZFS,RAID,FTP,Fusion 360,PhotoShop" array />
+				<SectionDesc title="years of Experience" desc="Node.JS=3,Vue.JS=1,JavaScript=5,HTML CSS=5" array range showValue />
 				<SectionDesc title="Operating Systems" desc="Linux=5,Windows=5,MacOS=2" array range />
 				<SectionDesc title="personality" desc="Relationing=4,Strategy=5,Communication=3.5,dedication=5,design=4" array range />
-				<SectionDesc title="languages" desc="English=3.5,Italian=5,French=1" array range />
+			</Section>
+
+			<Section title="languages">
+				<SectionDesc subt="" desc="English=3.5,Italian=5,French=1" array range />
 			</Section>
 
 			<Section title="patents">
@@ -122,7 +126,7 @@
 				<SectionDesc title="CCNA: Routing and Switching: Introduction to Networks" desc="Cisco Networking Academy" footer="May 2020" />
 			</Section>
 			<Section title="privacy">
-				<SectionDesc desc="I authorize the processing of my personal data pursuant to Legislative Decree 101/2018 and art. 13 GDPR (EU Regulation 2016/679) for the purposes of personnel research and selection" />
+				<SectionDesc subt="" desc="I authorize the processing of my personal data pursuant to Legislative Decree 101/2018 and art. 13 GDPR (EU Regulation 2016/679) for the purposes of personnel research and selection" />
 			</Section>
 		</div>
 	</div>
@@ -256,11 +260,11 @@
 
 		#skills {
 			margin-top: 12px;
-			margin-bottom: 5px;
+			margin-bottom: 0px;
 		}
 
 		#experience {
-			margin-top: 0px;
+			margin-top: 5px;
 			margin-bottom: 30px;
 		}
 		#projects {
@@ -283,18 +287,24 @@
 			margin-top: 30px;
 		}
 		#patents h2 {
-			margin-top: 0;
+			/* margin-top: 0; */
 			/* margin-bottom: 0; */
 		}
+		#languages h2 {
+			margin-top: 30px;
+		}
 		#privacy {
+			margin-bottom: 0;
+		}
+		#patents {
 			margin-bottom: 0;
 		}
 		aside {
 			padding-bottom: 0px;
 			min-height: 0;
 		}
-		.rightSide {
-			padding-bottom: 0px;
+		#rightSide {
+			padding-bottom: 8px;
 		}
 	}
 	#education * {
