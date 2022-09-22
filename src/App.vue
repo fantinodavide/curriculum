@@ -46,7 +46,7 @@
 			</Section>
 
 			<Section title="skills">
-				<SectionDesc title="programming Languages" desc="HTML, CSS, JavaScript, Node.js, PHP, C, C#, C++, Python" array />
+				<SectionDesc title="programming Languages" desc="Node.js, JavaScript, TypeScript, HTML, CSS, PHP, C, C#, C++, Python" array />
 				<SectionDesc title="Frameworks" desc="Vue.js, Angular, JQuery, Express.js, Crypto, Argon2, Puppeteer, Axios" array />
 				<SectionDesc title="cloud" desc="Amazon Web Services,IBM Cloud" array />
 				<!-- <SectionDesc title="other" desc="C, C#, C++, Python" array /> -->
@@ -54,11 +54,14 @@
 				<SectionDesc title="softwares" desc="Proxmox,Docker,Nginx,TrueNAS,ZFS,RAID,FTP,Fusion 360,PhotoShop" array />
 				<SectionDesc title="years of Experience" desc="Node.JS=3,Vue.JS=1,JavaScript=5,HTML CSS=5" array range showValue />
 				<SectionDesc title="Operating Systems" desc="Linux=5,Windows=5,MacOS=2" array range />
-				<SectionDesc title="personality" desc="Relationing=4,Strategy=5,Communication=3.5,dedication=5,design=4" array range />
+			</Section>
+
+			<Section title="personality">
+				<SectionDesc desc="Relationing=4,Strategy=5,Communication=3.5,dedication=5,design=4" array range />
 			</Section>
 
 			<Section title="languages">
-				<SectionDesc subt="" desc="English=3.5,Italian=5,French=1" array range />
+				<SectionDesc desc="English=3.5,Italian=5,French=1" array range />
 			</Section>
 
 			<Section title="patents">
@@ -111,7 +114,7 @@
 					<span aria-hidden="true">The project is born after the necessity of a better and quicker management of the people who intend to take part in a virtual mission through the flight simulator Digital Combat Simulator.<br />The tool parses missions files (LUA) and generates the booking table.<br />User authentication and management is based on a database of the forum in which all the members of a community are registered to reduce users' accounts.<br />Booking tables and their settings (ex. date and time, restrictions) are managed and stored with MongoDB.<br />The security side of this project has been widely studied, especially at the time of password encryption and validation for which I've chosen to use Argon2.<br />The aim was to reduce the amount of work of the community leader. OTA updates have been one of the most important features, after a release is published on the GitHub repository page the tool automatically downloads and installs it.</span>
 				</SectionDesc>
 				<SectionDesc title="DogTracker" desc="https://github.com/fantinodavide/DogTracker" date="Aug 2020 - jan 2021">
-					<span aria-hidden="true">Hardware choice.<br />Designing and 3D printing of the outer plastic shell.<br />Firmware development for two micro-controllers.<br />Android app development and publishment through the Play Store.<br />The project was born to help locating a blind dog in a wide-open area. Radio transmissions are almost absent not to disorient the dog that already has limited orientation ability.<br />The system is based on two ESP32 868Mhz devices with custom-developed firmware.<br />The "Base" device connects with the android application and communicates with the "Collar" device, it sends the virtual fence coordinates and stores the latest location of the "Collar".<br />The "Collar" device has a lighter firmware that gathers the GPS position, which is sent to the "Base" device, an alarm is triggered if the position is outside of the virtual fence.<br />Radio transmissions are based on a custom protocol that offers error detection and message acknowledgment.</span>
+					<span aria-hidden="true">The project was born to help locating a blind dog in a wide-open area.<br />The main steps have been the hardware choice, the designing and 3D printing of the protective shell, the firmwares development, and the android app development and publishment through the Play Store.<br />The project has been developed and studied with a close collaboration with veterinary experts to keep at the minimum every source of disorientation for the blind dog.<br />The system is based on two ESP32 868Mhz devices with a custom-developed firmware. Radio transmissions are based on a custom protocol that offers error detection and message acknowledgment.</span>
 				</SectionDesc>
 				<SectionDesc title="Home Server" date="Apr 2021">
 					<p>Hardware and Software configuration of the enterprise server HP ProLiant DL380 G7.<br />Set up with the hypervisor Proxmox and configured to work as a NAS, Reverse Proxy and Host for many projects.<br />The kerner of the hypervisor has been patched to unlock the IT HBA mode of the hardware RAID controller HP P410i with an unofficial but working tool. With the capability of bypassing the hardware raid I have been able to create a software ZFS RAID through the TrueNas OS installed in a virtual machine.</p>
@@ -264,25 +267,29 @@
 			margin-bottom: 0px;
 		}
 
+		#personality {
+			margin-top: 35px;
+		}
+
 		#experience {
 			margin-top: 5px;
 			margin-bottom: 30px;
 		}
 		#projects {
-			margin-top: 25px;
+			margin-top: 40px;
 			margin-bottom: 0px;
 		}
 		#projects #homeserver {
 			margin-top: 10px;
 		}
 		#projects #homeserver h4 {
-			margin-top: 0px;
+			/* margin-top: 0px; */
 		}
 		#certifications {
 			margin-top: 0px;
 		}
 		#certifications h2 {
-			margin-top: 25px;
+			margin-top: 10px;
 		}
 		#certifications h4 {
 			margin-top: 30px;
@@ -295,7 +302,8 @@
 			margin-top: 30px;
 		}
 		#privacy {
-			margin-bottom: 0;
+			margin-top: 220px;
+			margin-bottom: 10px;
 		}
 		#patents {
 			margin-bottom: 0;
