@@ -46,7 +46,8 @@
 			</Section>
 
 			<Section title="skills">
-				<SectionDesc title="programming Languages" desc="HTML, CSS, JavaScript, Vue.js, Angular, JQuery,Node.js,Express.js, PHP,C, C#, C++, Python" array />
+				<SectionDesc title="programming Languages" desc="HTML, CSS, JavaScript, Node.js, PHP, C, C#, C++, Python" array />
+				<SectionDesc title="Frameworks" desc="Vue.js, Angular, JQuery, Express.js, Crypto, Argon2, Puppeteer, Axios" array />
 				<SectionDesc title="cloud" desc="Amazon Web Services,IBM Cloud" array />
 				<!-- <SectionDesc title="other" desc="C, C#, C++, Python" array /> -->
 				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
@@ -67,7 +68,7 @@
 		</aside>
 		<div id="rightSide">
 			<Section title="about myself">
-				<SectionDesc desc="I'm a 20 years old italian IT specialist, student and enthusiast. During my student career I've been working on a wide variety of projects. I'm focusing my efforts to bring into my projects the most up-to-date features and technologies as long as the user-experience is the most clean, complete and straightforward. I've been learning and using a wide variety of programming languages for years and lately I started to deepen and mastering NodeJS and Vue.JS, and they have now become my go-to for every project." />
+				<SectionDesc desc="I'm a 20 years old italian IT specialist, student and enthusiast. During my student career I've been working on a wide variety of projects. I'm focusing my efforts on bringing into my projects the most up-to-date features and technologies as long as the user experience is the cleanest, complete, and straightforward. I've been learning and using a wide variety of programming languages for years and lately I started to deepen and mastering NodeJS and Vue.JS, and they have now become my go-to for every project." />
 			</Section>
 
 			<Section title="experience">
