@@ -47,11 +47,11 @@
 
 			<Section title="skills">
 				<SectionDesc title="programming Languages" desc="Node.js, JavaScript, TypeScript, HTML, CSS, PHP, C, C#, C++, Python" array />
-				<SectionDesc title="Frameworks" desc="Vue.js, Angular, JQuery, Express.js, Crypto, Argon2, Puppeteer, Axios" array />
+				<SectionDesc title="Frameworks" desc="NestJS, Vue.js, Angular, JQuery, Express.js, Prisma ORM, Crypto, Argon2, Puppeteer, Axios" array />
 				<SectionDesc title="cloud" desc="Amazon Web Services,IBM Cloud" array />
 				<!-- <SectionDesc title="other" desc="C, C#, C++, Python" array /> -->
 				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
-				<SectionDesc title="softwares" desc="Proxmox,Docker,Nginx,TrueNAS,ZFS,RAID,FTP,Fusion 360,PhotoShop" array />
+				<SectionDesc title="softwares" desc="Jira,Postman,Proxmox,Docker,Nginx,TrueNAS,ZFS,RAID,FTP,Fusion 360,PhotoShop" array />
 				<SectionDesc title="years of Experience" desc="Node.JS=3,Vue.JS=1,JavaScript=5,HTML CSS=5" array range showValue />
 				<SectionDesc title="Operating Systems" desc="Linux=5,Windows=5,MacOS=2" array range />
 			</Section>
@@ -75,6 +75,12 @@
 			</Section>
 
 			<Section title="experience">
+				<SectionDesc title="Sellup" subt="Backend Developer" desc="https://r2w.it" date="Nov 2022 - Current">
+					<p>Development of REST APIs, backend-to-backend proxy in Express.js.</p>
+					<p>
+						<tag v-for="c of ['NestJS', 'JavaScript', 'TypeScript', 'SQL', 'MongoDB', 'Express.js', 'Prisma ORM']" :value="c" skew />
+					</p>
+				</SectionDesc>
 				<SectionDesc title="Manfrinato Gioielli" subt="Full Stack Web Developer" desc="https://manfrinatogioielli.it" date="Jul 2019 - Dec 2021">
 					<p>Development of management website and public website e-commerce.</p>
 					<p>
@@ -268,15 +274,30 @@
 		}
 
 		#personality {
-			margin-top: 35px;
+			margin-top: 0px;
+		}
+		#personality h2{
+			margin-top: 0px;
 		}
 
 		#experience {
-			margin-top: 5px;
-			margin-bottom: 30px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		#experience h2 {
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		#experience h4{
+			margin-top: 25px;
+			margin-bottom: 5px;
 		}
 		#projects {
-			margin-top: 40px;
+			margin-top: 10px;
+			margin-bottom: 0px;
+		}
+		#projects h2 {
+			margin-top: 0px;
 			margin-bottom: 0px;
 		}
 		#projects #homeserver {
