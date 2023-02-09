@@ -78,7 +78,7 @@
 				<SectionDesc title="Sellup" subt="Backend Developer" desc="https://r2w.it" date="Nov 2022 - Current">
 					<p>REST APIs, backend-to-backend proxy and data model development. API and code documentation.</p>
 					<p>
-						<tag v-for="c of ['NestJS', 'TypeScript', 'JavaScript', 'SQL', 'MongoDB', 'Docker', 'AWS', 'Stripe', 'Express.js', 'Prisma ORM', ]" :value="c" skew />
+						<tag v-for="c of ['NestJS', 'TypeScript', 'JavaScript', 'SQL', 'MongoDB', 'Docker', 'AWS', 'Stripe', 'Express.js', 'Prisma ORM']" :value="c" skew />
 					</p>
 				</SectionDesc>
 				<SectionDesc title="Manfrinato Gioielli" subt="Full Stack Web Developer" desc="https://manfrinatogioielli.it" date="Jul 2019 - Dec 2021">
@@ -272,11 +272,14 @@
 			margin-top: 12px;
 			margin-bottom: 0px;
 		}
+		#skills div h4{
+			margin-top: 27px;
+		}
 
 		#personality {
 			margin-top: 0px;
 		}
-		#personality h2{
+		#personality h2 {
 			margin-top: 0px;
 		}
 
@@ -288,7 +291,7 @@
 			margin-top: 0px;
 			margin-bottom: 0px;
 		}
-		#experience h4{
+		#experience h4 {
 			margin-top: 25px;
 			margin-bottom: 5px;
 		}
