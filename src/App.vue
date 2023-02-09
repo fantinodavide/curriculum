@@ -52,7 +52,7 @@
 				<!-- <SectionDesc title="other" desc="C, C#, C++, Python" array /> -->
 				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
 				<SectionDesc title="softwares" desc="Jira,Postman,Proxmox,Docker,Nginx,TrueNAS,ZFS,RAID,FTP,Fusion 360,PhotoShop" array />
-				<SectionDesc title="years of Experience" desc="Node.JS=3,Vue.JS=1,JavaScript=5,HTML CSS=5" array range showValue />
+				<SectionDesc title="years of Experience" desc="Node.JS=3,Vue.JS=1,JavaScript=5,HTML CSS=5,AWS=1" array range showValue />
 				<SectionDesc title="Operating Systems" desc="Linux=5,Windows=5,MacOS=2" array range />
 			</Section>
 
@@ -71,14 +71,14 @@
 		</aside>
 		<div id="rightSide">
 			<Section title="about myself">
-				<SectionDesc desc="I'm a 20 years old italian IT specialist, student and enthusiast. During my student career I've been working on a wide variety of projects. I'm focusing my efforts on bringing into my projects the most up-to-date features and technologies as long as the user experience is the cleanest, complete, and straightforward. I've been learning and using a wide variety of programming languages for years and lately I started to deepen and mastering NodeJS and Vue.JS, and they have now become my go-to for every project." />
+				<SectionDesc desc="IT specialist, student, and enthusiast. I focus my efforts on bringing the most up-to-date features and technologies into my projects along with the cleanest and most straightforward user experience. I've been learning and using a wide variety of programming languages for years and lately, I started to deepen and master NodeJS and Vue.JS, TypeScript, and JavaScript, and they have now become my go-to for every project." />
 			</Section>
 
 			<Section title="experience">
 				<SectionDesc title="Sellup" subt="Backend Developer" desc="https://r2w.it" date="Nov 2022 - Current">
-					<p>Development of REST APIs, backend-to-backend proxy in Express.js.</p>
+					<p>REST APIs, backend-to-backend proxy and data model development. API and code documentation.</p>
 					<p>
-						<tag v-for="c of ['NestJS', 'JavaScript', 'TypeScript', 'SQL', 'MongoDB', 'Express.js', 'Prisma ORM']" :value="c" skew />
+						<tag v-for="c of ['NestJS', 'TypeScript', 'JavaScript', 'SQL', 'MongoDB', 'Docker', 'AWS', 'Stripe', 'Express.js', 'Prisma ORM', ]" :value="c" skew />
 					</p>
 				</SectionDesc>
 				<SectionDesc title="Manfrinato Gioielli" subt="Full Stack Web Developer" desc="https://manfrinatogioielli.it" date="Jul 2019 - Dec 2021">
