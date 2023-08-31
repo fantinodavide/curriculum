@@ -71,7 +71,9 @@
 		</aside>
 		<div id="rightSide">
 			<Section title="about myself">
-				<SectionDesc desc="IT specialist, student, and enthusiast. I focus my efforts on bringing the most up-to-date features and technologies into my projects along with the cleanest and most straightforward user experience. I've been learning and using a wide variety of programming languages for years and lately, I started to deepen and master NodeJS and Vue.JS, TypeScript, and JavaScript, and they have now become my go-to for every project." />
+				<SectionDesc
+					desc="I'm an IT Specialist committed to implementing the latest technologies to enhance project outcomes and user experience. Skilled in a diverse set of programming languages, my current focus is on NodeJS, Vue.JS, TypeScript, and JavaScript. I'm actively expanding my network security skills, specifically in sampling and analyzing DDoS attacks. I developed a custom-built script for continuous network traffic monitoring and leverage Wireshark for in-depth data analysis."
+				/>
 			</Section>
 
 			<Section title="experience">
@@ -114,16 +116,39 @@
 
 			<Section title="projects">
 				<SectionDesc title="Whitelister" desc="https://github.com/fantinodavide/Squad_Whitelister" date="Apr 2022">
-					<span>Built with Node.js, Vue.js and MongoDB, supports integrations with gameservers and a widely used voice chat platform.<br />The Whitelister tool gives a clean panel and a completely new and straightforward way to manage permissions of users in gameservers.<br />The project has sparked the interest in the gaming community. A constantly increasing amount of communities decided to use the Whitelister tool, managing thousands of people since the first beta was released on 09 Jun 2022. A demonstrative website is available at: <a href="https://sqwl.fantinodavide.it/">sqwl.fantinodavide.it</a> with the following admin credentials:<br />Username: demoadmin<br />Password: demo<br />To let people easily get in touch with me, to receive support or to follow the project development I have created the following Discord server: <a href="https://discord.com/invite/5hfcjNYdCP">discord.com/invite/5hfcjNYdCP</a></span>
+					<span
+						>Built with Node.js, Vue.js and MongoDB, supports integrations with gameservers and a widely used voice chat platform.<br />The Whitelister tool gives a clean panel and a
+						completely new and straightforward way to manage permissions of users in gameservers.<br />The project has sparked the interest in the gaming community. A constantly increasing
+						amount of communities decided to use the Whitelister tool, managing thousands of people since the first beta was released on 09 Jun 2022. A demonstrative website is available
+						at: <a href="https://sqwl.fantinodavide.it/">sqwl.fantinodavide.it</a> with the following admin credentials:<br />Username: demoadmin<br />Password: demo<br />To let people
+						easily get in touch with me, to receive support or to follow the project development I have created the following Discord server:
+						<a href="https://discord.com/invite/5hfcjNYdCP">discord.com/invite/5hfcjNYdCP</a></span
+					>
 				</SectionDesc>
 				<SectionDesc title="DCS Mission Booking" desc="https://github.com/fantinodavide/DCS_MissionBooking" date="Feb 2022">
-					<span aria-hidden="true">The project is born after the necessity of a better and quicker management of the people who intend to take part in a virtual mission through the flight simulator Digital Combat Simulator.<br />The tool parses missions files (LUA) and generates the booking table.<br />User authentication and management is based on a database of the forum in which all the members of a community are registered to reduce users' accounts.<br />Booking tables and their settings (ex. date and time, restrictions) are managed and stored with MongoDB.<br />The security side of this project has been widely studied, especially at the time of password encryption and validation for which I've chosen to use Argon2.<br />The aim was to reduce the amount of work of the community leader. OTA updates have been one of the most important features, after a release is published on the GitHub repository page the tool automatically downloads and installs it.</span>
+					<span aria-hidden="true"
+						>The project is born after the necessity of a better and quicker management of the people who intend to take part in a virtual mission through the flight simulator Digital
+						Combat Simulator.<br />The tool parses missions files (LUA) and generates the booking table.<br />User authentication and management is based on a database of the forum in
+						which all the members of a community are registered to reduce users' accounts.<br />Booking tables and their settings (ex. date and time, restrictions) are managed and stored
+						with MongoDB.<br />The security side of this project has been widely studied, especially at the time of password encryption and validation for which I've chosen to use
+						Argon2.<br />The aim was to reduce the amount of work of the community leader. OTA updates have been one of the most important features, after a release is published on the
+						GitHub repository page the tool automatically downloads and installs it.</span
+					>
 				</SectionDesc>
 				<SectionDesc title="DogTracker" desc="https://github.com/fantinodavide/DogTracker" date="Aug 2020 - jan 2021">
-					<span aria-hidden="true">The project was born to help locating a blind dog in a wide-open area.<br />The main steps have been the hardware choice, the designing and 3D printing of the protective shell, the firmwares development, and the android app development and publishment through the Play Store.<br />The project has been developed and studied with a close collaboration with veterinary experts to keep at the minimum every source of disorientation for the blind dog.<br />The system is based on two ESP32 868Mhz devices with a custom-developed firmware. Radio transmissions are based on a custom protocol that offers error detection and message acknowledgment.</span>
+					<span aria-hidden="true"
+						>The project was born to help locating a blind dog in a wide-open area.<br />The main steps have been the hardware choice, the designing and 3D printing of the protective
+						shell, the firmwares development, and the android app development and publishment through the Play Store.<br />The project has been developed and studied with a close
+						collaboration with veterinary experts to keep at the minimum every source of disorientation for the blind dog.<br />The system is based on two ESP32 868Mhz devices with a
+						custom-developed firmware. Radio transmissions are based on a custom protocol that offers error detection and message acknowledgment.</span
+					>
 				</SectionDesc>
 				<SectionDesc title="Home Server" date="Apr 2021">
-					<p>Hardware and Software configuration of the enterprise server HP ProLiant DL380 G7.<br />Set up with the hypervisor Proxmox and configured to work as a NAS, Reverse Proxy and Host for many projects.<br />The kerner of the hypervisor has been patched to unlock the IT HBA mode of the hardware RAID controller HP P410i with an unofficial but working tool. With the capability of bypassing the hardware raid I have been able to create a software ZFS RAID through the TrueNas OS installed in a virtual machine.</p>
+					<p>
+						Hardware and Software configuration of the enterprise server HP ProLiant DL380 G7.<br />Set up with the hypervisor Proxmox and configured to work as a NAS, Reverse Proxy and
+						Host for many projects.<br />The kerner of the hypervisor has been patched to unlock the IT HBA mode of the hardware RAID controller HP P410i with an unofficial but working
+						tool. With the capability of bypassing the hardware raid I have been able to create a software ZFS RAID through the TrueNas OS installed in a virtual machine.
+					</p>
 				</SectionDesc>
 			</Section>
 
@@ -136,7 +161,10 @@
 				<SectionDesc title="CCNA: Routing and Switching: Introduction to Networks" desc="Cisco Networking Academy" footer="May 2020" />
 			</Section>
 			<Section title="privacy">
-				<SectionDesc subt="" desc="I authorize the processing of my personal data pursuant to Legislative Decree 101/2018 and art. 13 GDPR (EU Regulation 2016/679) for the purposes of personnel research and selection" />
+				<SectionDesc
+					subt=""
+					desc="I authorize the processing of my personal data pursuant to Legislative Decree 101/2018 and art. 13 GDPR (EU Regulation 2016/679) for the purposes of personnel research and selection"
+				/>
 			</Section>
 		</div>
 	</div>
@@ -272,7 +300,7 @@
 			margin-top: 12px;
 			margin-bottom: 0px;
 		}
-		#skills div h4{
+		#skills div h4 {
 			margin-top: 27px;
 		}
 
