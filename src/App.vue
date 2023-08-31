@@ -52,7 +52,10 @@
 				<!-- <SectionDesc title="other" desc="C, C#, C++, Python" array /> -->
 				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
 				<SectionDesc title="softwares" desc="Jira,Postman,Proxmox,Docker,Nginx,Wireshark,TrueNAS,ZFS,RAID,FTP,Fusion 360,CPanel,WHMCS,Bitwarden,Termius" array />
-				<SectionDesc title="years of Experience" desc="Node.JS=4,Vue.JS=2,JavaScript=6,TypeScript=3,Bash=4,HTML CSS=6,AWS=1" array range showValue />
+			</Section>
+
+			<Section title="expertise">
+				<SectionDesc title="years of experience" desc="Node.JS=4,Vue.JS=2,JavaScript=6,TypeScript=2,Bash=3,HTML CSS=6,AWS=1" array range showValue />
 				<SectionDesc title="Operating Systems" desc="Linux=5,Windows=5,MacOS=2" array range />
 			</Section>
 
@@ -127,12 +130,9 @@
 				</SectionDesc>
 				<SectionDesc title="DCS Mission Booking" desc="https://github.com/fantinodavide/DCS_MissionBooking" date="Feb 2022">
 					<span aria-hidden="true"
-						>The project is born after the necessity of a better and quicker management of the people who intend to take part in a virtual mission through the flight simulator Digital
-						Combat Simulator.<br />The tool parses missions files (LUA) and generates the booking table.<br />User authentication and management is based on a database of the forum in
-						which all the members of a community are registered to reduce users' accounts.<br />Booking tables and their settings (ex. date and time, restrictions) are managed and stored
-						with MongoDB.<br />The security side of this project has been widely studied, especially at the time of password encryption and validation for which I've chosen to use
-						Argon2.<br />The aim was to reduce the amount of work of the community leader. OTA updates have been one of the most important features, after a release is published on the
-						GitHub repository page the tool automatically downloads and installs it.</span
+						>Developed a tool for efficient mission management in the Digital Combat Simulator. The application parses LUA mission files to generate booking tables. It integrates with a
+						community forum database for user authentication and employs MongoDB for data storage. Focused on security, using Argon2 for password encryption. Designed to minimize community
+						leader workload, the tool features automated OTA updates from its GitHub repository.</span
 					>
 				</SectionDesc>
 				<SectionDesc title="DogTracker" desc="https://github.com/fantinodavide/DogTracker" date="Aug 2020 - jan 2021">
@@ -213,7 +213,7 @@
 	body {
 		min-height: 100%;
 		/* min-width: 100vw; */
-		margin: 75px;
+		margin: 60px;
 		flex-grow: 1000;
 	}
 	html {
@@ -285,7 +285,7 @@
 	@media print {
 		body {
 			zoom: 80%;
-			margin: 10px;
+			margin: 0px;
 		}
 		h2 {
 			break-before: all;
@@ -296,6 +296,11 @@
 			display: none;
 		}
 
+		#expertise{
+			margin-top: 200px;
+
+		}
+
 		#skills {
 			margin-top: 12px;
 			margin-bottom: 0px;
@@ -304,12 +309,12 @@
 			margin-top: 27px;
 		}
 
-		#personality {
+		/* #personality {
 			margin-top: 0px;
 		}
 		#personality h2 {
 			margin-top: 0px;
-		}
+		} */
 
 		#experience {
 			margin-top: 0px;
@@ -325,11 +330,11 @@
 		}
 		#projects {
 			margin-top: 10px;
-			margin-bottom: 0px;
+			/* margin-bottom: 0px; */
 		}
 		#projects h2 {
-			margin-top: 0px;
-			margin-bottom: 0px;
+			/* margin-top: 10px;
+			margin-bottom: 0px; */
 		}
 		#projects #homeserver {
 			margin-top: 10px;
@@ -338,7 +343,7 @@
 			/* margin-top: 0px; */
 		}
 		#certifications {
-			margin-top: 0px;
+			margin-top: 140px;
 		}
 		#certifications h2 {
 			margin-top: 10px;
@@ -365,7 +370,7 @@
 			min-height: 0;
 		}
 		#rightSide {
-			padding-bottom: 8px;
+			padding-bottom: 45px;
 		}
 	}
 	#education * {
