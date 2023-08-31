@@ -2,6 +2,11 @@
 <script lang="ts">
 	/* eslint-disable */
 	export default {
+		data() {
+			return {
+				calcMax: Math.max(this.max, this.value),
+			};
+		},
 		props: {
 			value: Number,
 			title: String,
@@ -22,7 +27,7 @@
 				const r = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 				return txt.match(r);
 			},
-		},
+		}
 	};
 </script>
 
@@ -61,7 +66,7 @@
 		top: 0;
 		left: 0;
 		height: 100%;
-		width: v-bind(100 / max * value + '%');
+		width: v-bind(100 / calcMax * value + '%');
 		background: var(--dark2);
 		border-radius: 3px;
 	}
@@ -73,11 +78,11 @@
 		justify-content: center;
 		align-items: center;
 		top: 50%;
-		left: v-bind(100 / max * value + '%');
+		left: v-bind(100 / calcMax * value + '%');
 		height: 20px;
 		width: 20px;
 		background: var(--dark2);
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 		font-size: 14px;
 		color: #eee;
 		z-index: 2;

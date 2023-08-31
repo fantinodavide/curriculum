@@ -26,7 +26,7 @@
 <template>
 	<header>
 		<h1 style="margin-top: 0">Fantino Davide</h1>
-		<h2>Full Stack Software Developer, AWS Cloud Practitioner student</h2>
+		<h2>Software Developer</h2>
 	</header>
 	<div id="main">
 		<aside>
@@ -46,13 +46,13 @@
 			</Section>
 
 			<Section title="skills">
-				<SectionDesc title="programming Languages" desc="Node.js, JavaScript, TypeScript, HTML, CSS, PHP, C, C#, C++, Python" array />
+				<SectionDesc title="programming Languages" desc="Node.js, JavaScript, TypeScript, HTML, CSS, Bash, C, C#, C++, Python, PHP" array />
 				<SectionDesc title="Frameworks" desc="NestJS, Vue.js, Angular, JQuery, Express.js, Prisma ORM, Crypto, Argon2, Puppeteer, Axios" array />
 				<SectionDesc title="cloud" desc="Amazon Web Services,IBM Cloud" array />
 				<!-- <SectionDesc title="other" desc="C, C#, C++, Python" array /> -->
 				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
-				<SectionDesc title="softwares" desc="Jira,Postman,Proxmox,Docker,Nginx,TrueNAS,ZFS,RAID,FTP,Fusion 360,PhotoShop" array />
-				<SectionDesc title="years of Experience" desc="Node.JS=3,Vue.JS=1,JavaScript=5,HTML CSS=5,AWS=1" array range showValue />
+				<SectionDesc title="softwares" desc="Jira,Postman,Proxmox,Docker,Nginx,Wireshark,TrueNAS,ZFS,RAID,FTP,Fusion 360,CPanel,WHMCS,Bitwarden,Termius" array />
+				<SectionDesc title="years of Experience" desc="Node.JS=4,Vue.JS=2,JavaScript=6,TypeScript=3,Bash=4,HTML CSS=6,AWS=1" array range showValue />
 				<SectionDesc title="Operating Systems" desc="Linux=5,Windows=5,MacOS=2" array range />
 			</Section>
 

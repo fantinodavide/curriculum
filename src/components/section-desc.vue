@@ -72,7 +72,7 @@
 			<p v-if="!array && !isUrl(desc)">{{ desc.replace("\\n","<br />") }}</p>
 			<a v-else-if="!array && isUrl(desc)" :href="isEmail(desc) ? 'mailto:' : '' + desc" target="__blank">{{ desc.replace('https://', '').replace('www.', '') }}</a>
 			<div v-else-if="range">
-				<rangeElm v-for="t of desc.split(',')" :title="t.trim().split('=')[0]" :value="parseFloat(t.trim().split('=')[1])" :showValue="showValue"/>
+				<rangeElm v-for="t of desc.split(',')" :key="t" :title="t.trim().split('=')[0]" :value="parseFloat(t.trim().split('=')[1])" :showValue="showValue"/>
 			</div>
 			<div v-else>
 				<tag skew v-for="t of desc.split(',')" :value="t.trim()" />
