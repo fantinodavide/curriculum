@@ -118,14 +118,19 @@
 			</Section>
 
 			<Section title="projects">
+				<SectionDesc title="PSG-Hosting" desc="https://psg-hosting.com" date="Feb 2023">
+					<span
+						>Ascended quickly to a critical technical role, becoming the highest-ranked individual after the company owners. Engineered NetDump, a script that monitors and intelligently
+						dumps network traffic, triggering Discord notifications for unauthorized or malicious activity. Tasked with the comprehensive management of dedicated servers, hosting various
+						game server instances. Routinely interface with datacenter and hosting providers to ensure operational excellence. Leading the initiative for the company's expansion into
+						European markets.</span
+					>
+				</SectionDesc>
 				<SectionDesc title="Whitelister" desc="https://github.com/fantinodavide/Squad_Whitelister" date="Apr 2022">
 					<span
-						>Built with Node.js, Vue.js and MongoDB, supports integrations with gameservers and a widely used voice chat platform.<br />The Whitelister tool gives a clean panel and a
-						completely new and straightforward way to manage permissions of users in gameservers.<br />The project has sparked the interest in the gaming community. A constantly increasing
-						amount of communities decided to use the Whitelister tool, managing thousands of people since the first beta was released on 09 Jun 2022. A demonstrative website is available
-						at: <a href="https://sqwl.fantinodavide.it/">sqwl.fantinodavide.it</a> with the following admin credentials:<br />Username: demoadmin<br />Password: demo<br />To let people
-						easily get in touch with me, to receive support or to follow the project development I have created the following Discord server:
-						<a href="https://discord.com/invite/5hfcjNYdCP">discord.com/invite/5hfcjNYdCP</a></span
+						>Built with Node.js, Vue.js, and MongoDB, supports game server integrations. The Whitelister tool offers a new way to manage user permissions. Gained traction in the gaming
+						community, used by many since its beta release on 09 Jun 2022. Demo site: <a href="https://sqwl.fantinodavide.it/">sqwl.fantinodavide.it</a> (Username: demoadmin, Password:
+						demo). Contact for support or project updates via Discord: <a href="https://discord.com/invite/5hfcjNYdCP">discord.com/invite/5hfcjNYdCP</a>.</span
 					>
 				</SectionDesc>
 				<SectionDesc title="DCS Mission Booking" desc="https://github.com/fantinodavide/DCS_MissionBooking" date="Feb 2022">
@@ -296,9 +301,8 @@
 			display: none;
 		}
 
-		#expertise{
+		#expertise {
 			margin-top: 200px;
-
 		}
 
 		#skills {
@@ -318,7 +322,7 @@
 
 		#experience {
 			margin-top: 0px;
-			margin-bottom: 0px;
+			/* margin-bottom: 0px; */
 		}
 		#experience h2 {
 			margin-top: 0px;
@@ -326,24 +330,27 @@
 		}
 		#experience h4 {
 			margin-top: 25px;
-			margin-bottom: 5px;
+			margin-bottom: 0px;
 		}
 		#projects {
-			margin-top: 10px;
+			margin-top: 0px;
 			/* margin-bottom: 0px; */
 		}
 		#projects h2 {
-			/* margin-top: 10px;
-			margin-bottom: 0px; */
+			margin-top: 0px;
+			/* margin-bottom: 0px; */
+		}
+		#projects h4 {
+			margin-top: 50px;
 		}
 		#projects #homeserver {
-			margin-top: 10px;
+			/* margin-top: 10px; */
 		}
 		#projects #homeserver h4 {
 			/* margin-top: 0px; */
 		}
 		#certifications {
-			margin-top: 140px;
+			margin-top: 0px;
 		}
 		#certifications h2 {
 			margin-top: 10px;
