@@ -80,39 +80,45 @@
 			</Section>
 
 			<Section title="experience">
-				<SectionDesc title="Sellup" subt="Backend Developer" desc="https://r2w.it" date="Nov 2022 - Current">
+				<SectionDesc title="Sellup" subt="Software Developer" desc="https://sellup.cloud" date="Apr 2023 - Current">
+					<p>Architected and developed full-stack software solutions utilizing REST APIs, data modeling, and frontend interfaces.</p>
+					<p>
+						<tag v-for="c of ['NestJS', 'TypeScript', 'JavaScript', 'Vue.js', 'Angular', 'SQL', 'MongoDB', 'Docker', 'AWS', 'Stripe', 'Express.js', 'Prisma ORM', 'Jira', 'Swagger']" :key="c" :value="c" skew />
+					</p>
+				</SectionDesc>
+				<SectionDesc title="Sellup" subt="Backend Developer Intern" desc="https://sellup.cloud" date="Nov 2022 - Apr 2023">
 					<p>REST APIs, backend-to-backend proxy and data model development. API and code documentation.</p>
 					<p>
-						<tag v-for="c of ['NestJS', 'TypeScript', 'JavaScript', 'SQL', 'MongoDB', 'Docker', 'AWS', 'Stripe', 'Express.js', 'Prisma ORM']" :value="c" skew />
+						<tag v-for="c of ['NestJS', 'TypeScript', 'JavaScript', 'SQL', 'Docker', 'AWS', 'Stripe', 'Express.js', 'Prisma ORM', 'Jira', 'Swagger']" :key="c" :value="c" skew />
 					</p>
 				</SectionDesc>
 				<SectionDesc title="Manfrinato Gioielli" subt="Full Stack Web Developer" desc="https://manfrinatogioielli.it" date="Jul 2019 - Dec 2021">
 					<p>Development of management website and public website e-commerce.</p>
 					<p>
-						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" skew />
-						<tag v-for="c of ['PHP', 'SQL']" :value="c" skew />
+						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" :key="c" skew />
+						<tag v-for="c of ['PHP', 'SQL']" :value="c" :key="c" skew />
 					</p>
 				</SectionDesc>
-				<SectionDesc title="Greenspace E-mobility" subt="Full Stack Web Developer" date="Jul 2021 - Sep 2021">
+				<!-- <SectionDesc title="Greenspace E-mobility" subt="Full Stack Web Developer" date="Jul 2021 - Sep 2021">
 					<p>Development of the first version and no more active management website and public website.</p>
 					<p>Configuration of a VPS for website hosting and database hosting.</p>
 					<p>
-						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" skew />
-						<tag v-for="c of ['PHP', 'SQL', 'Bash']" :value="c" skew />
+						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" :key="c" skew />
+						<tag v-for="c of ['PHP', 'SQL', 'Bash']" :value="c" :key="c" skew />
 					</p>
-				</SectionDesc>
+				</SectionDesc> -->
 				<SectionDesc title="Olos Massaggi e Formazione Ayurvedica" subt="Full Stack Web Developer" desc="https://olostrattamentiolistici.eu" date="jan 2017 - Jun 2019">
 					<p>Development of management website and public website.</p>
 					<p>Configuration of a VPS for website hosting</p>
 					<p>
-						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" skew />
-						<tag v-for="c of ['PHP', 'Bash']" :value="c" skew />
+						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" :key="c" skew />
+						<tag v-for="c of ['PHP', 'Bash']" :value="c" :key="c" skew />
 					</p>
 				</SectionDesc>
 				<SectionDesc title="Calzolaio Maurizio Calignano" subt="Frontend Developer" desc="https://www.calzolaiomaurizio.it" date="Jun 2016 - Oct 2017">
 					<p>Development of the public website.</p>
 					<p>
-						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" skew />
+						<tag v-for="c of ['HTML', 'CSS', 'JavaScript']" :value="c" :key="c" skew />
 					</p>
 				</SectionDesc>
 			</Section>
@@ -366,14 +372,14 @@
 			margin-top: 30px;
 		}
 		#privacy {
-			margin-top: 220px;
+			margin-top: 310px;
 			margin-bottom: 10px;
 		}
 		#patents {
 			margin-bottom: 0;
 		}
 		aside {
-			padding-bottom: 0px;
+			padding-bottom: 140px;
 			min-height: 0;
 		}
 		#rightSide {
@@ -399,5 +405,9 @@
 	}
 	#print {
 		padding: 10px 20px;
+	}
+
+	.desc p {
+		margin-bottom: 5px;
 	}
 </style>

@@ -62,20 +62,22 @@
 </script>
 
 <template>
-	<div :id="title?title.replace(/\s/g,'').toLowerCase():''">
-		<h4 v-if="title || title==''">
-			<tag v-if="date" :value="date" arrow/>{{ title }}
-		</h4>
-		<h5 v-show="subt || subt==''">{{ subt }}</h5>
+	<div :id="title ? title.replace(/\s/g, '').toLowerCase() : ''">
+		<h4 v-if="title || title == ''"><tag v-if="date" :value="date" arrow />{{ title }}</h4>
+		<div class="horizontal">
+			<h5 v-show="subt || subt == ''">{{ subt }} @ </h5>
+			<div class="desc" v-if="desc" :class="{ array: array }">
+				<p v-if="!array && !isUrl(desc)">{{ desc.replace("\\n","<br />") }}</p>
+				<a v-else-if="!array && isUrl(desc)" :href="isEmail(desc) ? 'mailto:' : '' + desc" target="__blank">{{ desc.replace('https://', '').replace('www.', '') }}</a>
+				<!-- <div v-if="(!array && !isUrl(desc)) || (!array && isUrl(desc))" class="horizontal">
+			</div> -->
 
-		<div class="desc" v-if="desc" :class="{ array: array }">
-			<p v-if="!array && !isUrl(desc)">{{ desc.replace("\\n","<br />") }}</p>
-			<a v-else-if="!array && isUrl(desc)" :href="isEmail(desc) ? 'mailto:' : '' + desc" target="__blank">{{ desc.replace('https://', '').replace('www.', '') }}</a>
-			<div v-else-if="range">
-				<rangeElm v-for="t of desc.split(',')" :key="t" :title="t.trim().split('=')[0]" :value="parseFloat(t.trim().split('=')[1])" :showValue="showValue"/>
-			</div>
-			<div v-else>
-				<tag skew v-for="t of desc.split(',')" :value="t.trim()" />
+				<div v-else-if="range">
+					<rangeElm v-for="t of desc.split(',')" :key="t" :title="t.trim().split('=')[0]" :value="parseFloat(t.trim().split('=')[1])" :showValue="showValue" />
+				</div>
+				<div v-else>
+					<tag skew v-for="t of desc.split(',')" :value="t.trim()" />
+				</div>
 			</div>
 		</div>
 		<div v-if="$slots._" class="desc">
@@ -103,18 +105,34 @@
 		word-spacing: 0px;
 		word-break: keep-all;
 	}
+	.horizontal {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		/* margin: 2px 0; */
+	}
+	.horizontal p,
+	.horizontal a {
+		width: auto;
+		/* margin-left: 20px; */
+	}
 	.desc {
 		margin-left: 5px;
 		text-align: justify;
+		/* margin: 1px inh */
 	}
 	h5:first-of-type {
 		margin-top: 0;
 	}
 	h5 {
+		margin: 0 0;
 		margin-left: 5px !important;
 		font-style: italic;
+		font-size: 14px;
 		/* font-weight: 600; */
-		color: #787878;
+		color: #676767;
+		/* color: #787878; */
+		/* width: fit-content; */
 	}
 
 	.date {
@@ -127,7 +145,7 @@
 		margin-right: 15px;
 	}
 	.date::after {
-		content: "";
+		content: '';
 		position: absolute;
 		width: 16.5px;
 		height: 16.5px;
