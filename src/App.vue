@@ -47,7 +47,7 @@
 
 			<Section title="skills">
 				<SectionDesc title="programming Languages" desc="Node.js, JavaScript, TypeScript, HTML, CSS, Bash, C, C#, C++, Python, PHP" array />
-				<SectionDesc title="Frameworks" desc="NestJS, Vue.js, Angular, JQuery, Express.js, Prisma ORM, Crypto, Argon2, Puppeteer, Axios" array />
+				<SectionDesc title="Frameworks" desc="NestJS, Vue.js, Angular, JQuery, Express.js, Prisma ORM, Crypto, Argon2, Puppeteer, Axios, Discord.js, Webpack" array />
 				<SectionDesc title="cloud" desc="Amazon Web Services,IBM Cloud" array />
 				<!-- <SectionDesc title="other" desc="C, C#, C++, Python" array /> -->
 				<SectionDesc title="Databases" desc="MongoDB, MySQL,SQLite,MariaDB" array />
@@ -83,7 +83,12 @@
 				<SectionDesc title="Sellup" subt="Software Developer" desc="https://sellup.cloud" date="Apr 2023 - Current">
 					<p>Architected and developed full-stack software solutions utilizing REST APIs, data modeling, and frontend interfaces.</p>
 					<p>
-						<tag v-for="c of ['NestJS', 'TypeScript', 'JavaScript', 'Vue.js', 'Angular', 'SQL', 'MongoDB', 'Docker', 'AWS', 'Stripe', 'Express.js', 'Prisma ORM', 'Jira', 'Swagger']" :key="c" :value="c" skew />
+						<tag
+							v-for="c of ['NestJS', 'TypeScript', 'JavaScript', 'Vue.js', 'Angular', 'SQL', 'MongoDB', 'Docker', 'AWS', 'Stripe', 'Express.js', 'Prisma ORM', 'Jira', 'Swagger']"
+							:key="c"
+							:value="c"
+							skew
+						/>
 					</p>
 				</SectionDesc>
 				<SectionDesc title="Sellup" subt="Backend Developer Intern" desc="https://sellup.cloud" date="Nov 2022 - Apr 2023">
@@ -124,6 +129,13 @@
 			</Section>
 
 			<Section title="projects">
+				<SectionDesc title="Squad-Log-To-Graph" desc="https://github.com/fantinodavide/Squad-Log-To-Graph" date="May 2023">
+					<span
+						>Initially developed as a standalone tool for Squad server log analysis, this application provides server statistics, cheat reports, and graph generation. An upcoming update
+						will introduce a SquadJS plugin and a static web page, both currently in closed testing. The project also features a custom Discord client to integrate the latest Discord
+						functionalities. The SquadJS plugin is made user-friendly through Webpack bundling.</span
+					>
+				</SectionDesc>
 				<SectionDesc title="PSG-Hosting" desc="https://psg-hosting.com" date="Feb 2023">
 					<span
 						>Ascended quickly to a critical technical role, becoming the highest-ranked individual after the company owners. Engineered NetDump, a script that monitors and intelligently
@@ -148,17 +160,17 @@
 				</SectionDesc>
 				<SectionDesc title="DogTracker" desc="https://github.com/fantinodavide/DogTracker" date="Aug 2020 - jan 2021">
 					<span aria-hidden="true"
-						>The project was born to help locating a blind dog in a wide-open area.<br />The main steps have been the hardware choice, the designing and 3D printing of the protective
-						shell, the firmwares development, and the android app development and publishment through the Play Store.<br />The project has been developed and studied with a close
-						collaboration with veterinary experts to keep at the minimum every source of disorientation for the blind dog.<br />The system is based on two ESP32 868Mhz devices with a
-						custom-developed firmware. Radio transmissions are based on a custom protocol that offers error detection and message acknowledgment.</span
+						>A project born to help locating a blind dog in a wide-open area.<br />The main steps have been the hardware choice, the designing and 3D printing of the protective shell, the
+						firmwares development, and the android app development and publishment on the Play Store.<br />A close collaboration with veterinary experts has been extremely important to
+						reduce the sources of disorientation for the blind dog.<br />The system is based on two ESP32 868Mhz devices with a custom-developed firmware. Radio transmissions are based on
+						a custom protocol that offers error detection and message acknowledgment.</span
 					>
 				</SectionDesc>
 				<SectionDesc title="Home Server" date="Apr 2021">
 					<p>
 						Hardware and Software configuration of the enterprise server HP ProLiant DL380 G7.<br />Set up with the hypervisor Proxmox and configured to work as a NAS, Reverse Proxy and
-						Host for many projects.<br />The kerner of the hypervisor has been patched to unlock the IT HBA mode of the hardware RAID controller HP P410i with an unofficial but working
-						tool. With the capability of bypassing the hardware raid I have been able to create a software ZFS RAID through the TrueNas OS installed in a virtual machine.
+						Host for many projects.<br />The kerner of the hypervisor has been patched to unlock the IT HBA mode of the hardware RAID controller HP P410i to take advantage of the software
+						ZFS RAID.
 					</p>
 				</SectionDesc>
 			</Section>
@@ -308,7 +320,7 @@
 		}
 
 		#expertise {
-			margin-top: 200px;
+			margin-top: 160px;
 		}
 
 		#skills {
@@ -347,7 +359,7 @@
 			/* margin-bottom: 0px; */
 		}
 		#projects h4 {
-			margin-top: 50px;
+			margin-top: 25px;
 		}
 		#projects #homeserver {
 			/* margin-top: 10px; */
@@ -359,7 +371,7 @@
 			margin-top: 0px;
 		}
 		#certifications h2 {
-			margin-top: 10px;
+			margin-top: 0px;
 		}
 		#certifications h4 {
 			margin-top: 30px;
@@ -368,11 +380,14 @@
 			/* margin-top: 0; */
 			/* margin-bottom: 0; */
 		}
+		#personality h2 {
+			margin-top: 30px;
+		}
 		#languages h2 {
 			margin-top: 30px;
 		}
 		#privacy {
-			margin-top: 310px;
+			margin-top: 290px;
 			margin-bottom: 10px;
 		}
 		#patents {
