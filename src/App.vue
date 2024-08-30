@@ -55,7 +55,7 @@
 			</Section>
 
 			<Section title="expertise">
-				<SectionDesc title="years of experience" desc="Node.JS=4,Vue.JS=2,JavaScript=6,TypeScript=2,Bash=3,HTML CSS=6,AWS=1" array range showValue />
+				<SectionDesc title="years of experience" desc="Node.JS=4,Vue.JS=3,JavaScript=6,TypeScript=3,Bash=4,HTML CSS=6,AWS=2" array range showValue />
 				<SectionDesc title="Operating Systems" desc="Linux=5,Windows=5,MacOS=2" array range />
 			</Section>
 
@@ -64,7 +64,7 @@
 			</Section>
 
 			<Section title="languages">
-				<SectionDesc desc="English=3.5,Italian=5,French=1" array range />
+				<SectionDesc desc="English=4,Italian=5,French=1" array range />
 			</Section>
 
 			<Section title="patents">
@@ -75,7 +75,7 @@
 		<div id="rightSide">
 			<Section title="about myself">
 				<SectionDesc
-					desc="I'm an IT Specialist committed to implementing the latest technologies to enhance project outcomes and user experience. Skilled in a diverse set of programming languages, my current focus is on NodeJS, Vue.JS, TypeScript, and JavaScript. I'm actively expanding my network security skills, specifically in sampling and analyzing DDoS attacks. I developed a custom-built script for continuous network traffic monitoring and leverage Wireshark for in-depth data analysis."
+					desc="IT Specialist committed to implementing the latest technologies to enhance project outcomes and user experience. Skilled in a diverse set of programming languages, my current focus is on NodeJS, Vue.JS, TypeScript, and JavaScript, while learning Go. Actively expanding my network security skills, sampling, analyzing and blocking DDoS attacks."
 				/>
 			</Section>
 
@@ -84,11 +84,12 @@
 					<p>Architected and developed full-stack software solutions utilizing REST APIs, data modeling, and frontend interfaces.</p>
 					<p>
 						<tag
-							v-for="c of ['NestJS', 'TypeScript', 'JavaScript', 'Vue.js', 'Angular', 'SQL', 'MongoDB', 'Docker', 'AWS', 'Stripe', 'Express.js', 'Prisma ORM', 'Jira', 'Swagger']"
+							v-for="c of ['NestJS', 'TypeScript', 'Vue.js', 'Angular', 'SQL', 'MongoDB', 'Docker', 'AWS', 'Stripe', 'Prisma ORM', 'Jira', 'Swagger']"
 							:key="c"
 							:value="c"
 							skew
-						/>
+						/><br>
+						<tag v-for="c of ['AWS', 'S3', 'EC2', 'ECR', 'ECS', 'API Gateway', 'Lambda', 'IAM']" :key="c" :value="c" skew />
 					</p>
 				</SectionDesc>
 				<SectionDesc title="Sellup" subt="Backend Developer Intern" desc="https://sellup.cloud" date="Nov 2022 - Apr 2023">
@@ -339,8 +340,8 @@
 		} */
 
 		#experience {
-			margin-top: 0px;
-			/* margin-bottom: 0px; */
+			margin-top: 15px;
+			margin-bottom: 0px;
 		}
 		#experience h2 {
 			margin-top: 0px;
@@ -387,8 +388,8 @@
 			margin-top: 30px;
 		}
 		#privacy {
-			margin-top: 290px;
-			margin-bottom: 10px;
+			margin-top: 350px;
+			margin-bottom: 0px;
 		}
 		#patents {
 			margin-bottom: 0;
@@ -398,7 +399,8 @@
 			min-height: 0;
 		}
 		#rightSide {
-			padding-bottom: 45px;
+			/* padding-bottom: 45px; */
+			padding-bottom: 0px;
 		}
 	}
 	#education * {
