@@ -89,7 +89,7 @@
 							:value="c"
 							skew
 						/><br>
-						<tag v-for="c of ['AWS', 'S3', 'EC2', 'ECR', 'ECS', 'API Gateway', 'Lambda', 'IAM']" :key="c" :value="c" skew />
+						<tag v-for="c of ['AWS', 'S3', 'EC2', 'ECR', 'ECS', 'API Gateway', 'Lambda', 'IAM', 'Terraform', 'Bitbucket']" :key="c" :value="c" skew />
 					</p>
 				</SectionDesc>
 				<SectionDesc title="Sellup" subt="Backend Developer Intern" desc="https://sellup.cloud" date="Nov 2022 - Apr 2023">
@@ -321,7 +321,7 @@
 		}
 
 		#expertise {
-			margin-top: 160px;
+			margin-top: 140px;
 		}
 
 		#skills {
