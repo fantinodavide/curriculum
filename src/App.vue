@@ -36,7 +36,7 @@
 				<SectionDesc title="email" desc="fantinodavide02@gmail.com" />
 				<SectionDesc title="pec" desc="fantinodavide@pec.it" />
 				<SectionDesc title="github" desc="https://github.com/fantinodavide" />
-				<SectionDesc title="linkedin" desc="https://www.linkedin.com/in/fantino-davide" />
+				<!-- <SectionDesc title="linkedin" desc="https://www.linkedin.com/in/fantino-davide" /> -->
 				<SectionDesc title="curriculum vitae" desc="https://cv.fantinodavide.it" />
 				<SectionDesc title="birthday" desc="28 Jan 2002" />
 			</Section>
