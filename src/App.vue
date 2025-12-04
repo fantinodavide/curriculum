@@ -321,11 +321,11 @@
 		}
 
 		#expertise {
-			margin-top: 140px;
+			margin-top: 70px;
 		}
 
 		#skills {
-			margin-top: 12px;
+			margin-top: 80px;
 			margin-bottom: 0px;
 		}
 		#skills div h4 {
