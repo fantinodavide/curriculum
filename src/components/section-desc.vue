@@ -39,6 +39,11 @@
 				required: false,
 				type: Boolean,
 			},
+			calcYears: {
+				default: false,
+				required: false,
+				type: Boolean,
+			},
 			date: {
 				required: false,
 				type: String,
@@ -57,7 +62,7 @@
 		created() {
 			// console.log(JSON.parse(JSON.stringify(this.$props)));
 			console.log(this.$slots._);
-		},
+		}
 	};
 </script>
 
@@ -73,7 +78,7 @@
 			</div> -->
 
 				<div v-else-if="range">
-					<rangeElm v-for="t of desc.split(',')" :key="t" :title="t.trim().split('=')[0]" :value="parseFloat(t.trim().split('=')[1])" :showValue="showValue" />
+					<rangeElm v-for="t of desc.split(',')" :key="t" :title="t.trim().split('=')[0]" :value="calcYears ? (new Date()).getFullYear() - +t.trim().split('=')[1] : +t.trim().split('=')[1]" :showValue="showValue" />
 				</div>
 				<div v-else>
 					<tag skew v-for="t of desc.split(',')" :value="t.trim()" />

@@ -55,7 +55,7 @@
 			</Section>
 
 			<Section title="expertise">
-				<SectionDesc title="years of experience" desc="Node.JS=4,Vue.JS=3,JavaScript=6,TypeScript=3,Bash=4,HTML CSS=6,AWS=2" array range showValue />
+				<SectionDesc title="years of experience" desc="Node.JS=2021,Vue.JS=2022,JavaScript=2019,TypeScript=2022,Bash=2021,HTML CSS=2019,AWS=2023" array range showValue calcYears />
 				<SectionDesc title="Operating Systems" desc="Linux=5,Windows=5,MacOS=2" array range />
 			</Section>
 
